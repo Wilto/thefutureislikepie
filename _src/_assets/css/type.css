@@ -1,0 +1,110 @@
+/* Adelle Sans */
+@font-face {
+    font-family: 'AdelleSans';
+    src: url('/_assets/fonts/AdelleSans-Bold.woff2') format('woff2'),
+        url('/_assets/fonts/AdelleSans-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'AdelleSans';
+    src: url('/_assets/fonts/AdelleSans-Light.woff2') format('woff2'),
+        url('/_assets/fonts/AdelleSans-Light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Sofia Pro Soft */
+@font-face {
+    font-family: 'Sofia';
+    src: url('/_assets/fonts/SofiaProSoftBold.woff2') format('woff2'),
+        url('/_assets/fonts/SofiaProSoftBold.woff2') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Sofia';
+    src: url('/_assets/fonts/SofiaProSoftReg.woff2') format('woff2'),
+        url('/_assets/fonts/SofiaProSoftReg.woff2') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Sofia';
+    src: url('/_assets/fonts/SofiaProSoftLight.woff2') format('woff2'),
+        url('/_assets/fonts/SofiaProSoftLight.woff2') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+p {
+    margin: .25em 0 .5em 0;
+}
+li {
+    font-size: .9em;
+    margin: .3em 0;
+}
+
+.sub {
+    font-size: 1.2em;
+    line-height: 1.3;
+}
+
+.section-hed {
+    font-family: Sofia, sans-serif;
+    text-transform: uppercase;
+    font-size: 1.65em;
+    margin-bottom: 0;
+    letter-spacing: .04em;
+    font-weight: 400;
+}
+
+.section-hed {
+    display: flex;
+}
+.section-hed:after {
+    border: solid rgba(255,255,255,.9);
+    content: "";
+    display: block;
+    flex-grow: 2;
+    margin: .4em 0 .25em 3em;
+    border-width: 3px 3px 0 0;
+}
+
+.lede {
+    font-size: 1.3em;
+    font-family: Sofia, sans-serif;
+    font-weight: 100;
+    margin: 0 0 1.25em 0;
+}
+
+.lede strong {
+    font-weight: 800;
+}
+
+.site-lede {
+    font-size: 1.45em;
+    line-height: 1.3;
+    width: 90%;
+    max-width: 32.5em;
+}
+
+.page-hed {
+    font-family: Sofia, sans-serif;
+    font-size: 3em;
+    font-weight: normal;
+    margin: .65em 0 .25em 0;
+}
+
+.hero {
+    font-family: Sofia, sans-serif;
+    font-size: 1.4em;
+    font-weight: 100;
+}
+

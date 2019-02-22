@@ -1,0 +1,57 @@
+/*
+Red: 
+	#f04938;
+	rgba(240, 73, 56, 1);
+
+Teal:;
+	#00a9b3;
+	rgba(0, 169, 179, 1);
+
+Grey:
+	#414042;
+	rgba(65, 64, 66, 1);
+*/
+
+p, li,
+.section-hed {
+	color: #fff;
+}
+.hero p, .hero li,
+.inv p, .inv li {
+	color: #414042;
+}
+
+.site-head {
+	background: #f04938;
+	color: #f2fafe;
+}
+
+/* Type */
+.page-hed {
+	color: #00a9b3;
+}
+
+.head {
+	color: #414042;
+}
+
+/* Panel theming */
+.sub {
+	background: #343534;
+	border-top: .45em solid #fff;
+}
+.sub:nth-of-type(2n) {
+	background: #00a9b3;
+}
+.sub:nth-of-type(3n) {
+	background: #f04938;
+	border-color: #414042;
+}
+.sub:nth-of-type(4n) {
+	background: #fff;
+	border-color: #479ea3;
+}
+.sub:nth-of-type(4n) p,
+.sub:nth-of-type(4n) li {
+	color: #414042;
+}

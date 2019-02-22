@@ -1,0 +1,33 @@
+{
+  "name": "hire-wilto",
+  "version": "0.0.1",
+  "description": "Do it, chicken.",
+  "scripts": {
+    "build": "eleventy",
+    "watch": "eleventy --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:Wilto/hire.wil.to.git"
+  },
+  "author": {
+    "name": "Mat Marquis",
+    "email": "mat@matmarquis.com",
+    "url": "http://matmarquis.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Wilto/hire.wil.to/issues"
+  },
+  "homepage": "https://hire.wil.to",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.7.1",
+    "grunt-cli": "^1.3.2",
+    "grunt-contrib-clean": "^2.0.0",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-cssmin": "^3.0.0",
+    "grunt-contrib-uglify-es": "^3.3.0",
+    "grunt-contrib-watch": "^1.1.0",
+    "grunt-responsive-images": "^1.10.1"
+  }
+}

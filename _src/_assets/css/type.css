@@ -44,11 +44,28 @@
 
 
 p {
+    font-family: AdelleSans;
+    font-weight: 100;
+    line-height: 1.4;
     margin: .25em 0 .5em 0;
+}
+ul {
+    list-style: none;
 }
 li {
     font-size: .9em;
     margin: .3em 0;
+    padding-left: .85em;
+    margin-left: 0;
+    position: relative;
+}
+li:before {
+    content: "\2022";
+    display: block;
+    line-height: 1.1;
+    position: absolute;
+    left: 0;
+    top: 0;
 }
 
 .sub {
@@ -81,7 +98,7 @@ li {
     font-size: 1.3em;
     font-family: Sofia, sans-serif;
     font-weight: 100;
-    margin: 0 0 1.25em 0;
+    margin: 0 0 1.5em 0;
 }
 
 .lede strong {
@@ -89,17 +106,48 @@ li {
 }
 
 .site-lede {
-    font-size: 1.45em;
+    font-size: 1.2em;
     line-height: 1.3;
     width: 90%;
     max-width: 32.5em;
+    margin: 0;
 }
+@media( min-width: 40em ) {
+    .site-lede {
+        font-size: 3vw;
+    }
+}
+@media( min-width: 55em ) {
+    .site-lede {
+        font-size: 1.65em;
+    }
+}
+
 
 .page-hed {
     font-family: Sofia, sans-serif;
-    font-size: 3em;
+    font-size: 1.8em;
+    padding-right: 1.5em;
+    line-height: 1.1;
     font-weight: normal;
-    margin: .65em 0 .25em 0;
+    margin: .125em 0 1.25em 0;
+}
+@media( min-width: 32.5em ) {
+    .page-hed {
+        font-size: 5.5vw;
+    }
+}
+@media( min-width: 55em ) {
+    .page-hed {
+        font-size: 2.85em;
+    }
+}
+
+.page-lede {
+    margin: 1.5em 0 0 0;
+    max-width: 35em;
+    font-size: 1.5em;
+    line-height: 1.25;
 }
 
 .hero {

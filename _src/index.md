@@ -4,7 +4,9 @@ title: I make information easier to use.
 lede: "My name is <strong>Lisa Maria Martin</strong>, and I am a consultant specializing in information architecture, content strategy, and user experience design."
 ---
 
-I partner with agencies and clients to build well-structured websites by:
+I partner with agencies and clients to build well-structured websites by: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea.
 
 * Analyzing web content to identify current challenges and potential solutions
 * Building sitemaps and navigation structures to support information access and discovery

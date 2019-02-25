@@ -65,13 +65,14 @@
 		<header class="site-head">
 			<div class="sub-body">
 				<h1 class="logo"><img src="/_assets/img/logo.svg" alt="{{ data.name | safe }}"></h1>
-				<p class="lede site-lede">{{ lede | safe }}</p>
+				
 			</div>
 		</header>
 
 		<main role="main" id="main"{% if templateClass %} class="{{ templateClass }}"{% endif %}>
 			<div class="body">
 				<div class="sub-body">
+					<p class="lede page-lede">{{ lede | safe }}</p>
 					<h2 class="page-hed">{{ title | safe }}</h2>
 					<div class="hero">
 						{{ content | safe }}

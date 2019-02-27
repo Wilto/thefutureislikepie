@@ -21,6 +21,9 @@ body {
 		margin-top: 12em;
 	}
 }
+img.post-art+.site-head {
+	margin-top: -.5em;
+}
 
 .logo {
 	width: 33.333333%;
@@ -38,9 +41,25 @@ body {
 	max-width: 960px;
 	padding: 2.5em 2.5% 5.5em 2.5%;
 }
+
+.body .sub-body:not(:first-of-type) {
+	min-height: 40vh;
+}
 .site-head .sub-body {
 	max-width: 1048px;
 	padding: 1.5em 2.5% 1.5em 2.5%;
+}
+
+.post {
+	margin: 2.5em 0;
+}
+.tmpl-post {
+	padding-top: 4em;
+}
+.post-copy {
+	margin-top: 1.25em;
+	font-size: 1.15em;
+	line-height: 1.2;
 }
 
 @supports( display: grid ) {

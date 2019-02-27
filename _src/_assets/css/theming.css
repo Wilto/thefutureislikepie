@@ -19,6 +19,20 @@ main {
 	background: #f2fafe;
 }
 
+a {
+	color: #00a9b3;
+	transition: color .2s linear, text-decoration-color .2s linear;
+	text-decoration-color: #f04938;
+	font-weight: normal;
+	box-decoration-break: clone;
+	text-decoration-skip: ink;
+}
+a:hover {
+	color: #f04938;
+	text-decoration-color: transparent;
+	cursor: pointer;
+}
+p,
 .hero p, .hero li,
 .inv p, .inv li {
 	color: #414042;
@@ -65,9 +79,20 @@ li:before {
 .sub:nth-of-type(2n) {
 	background: #00a9b3;
 }
+.sub:nth-of-type(2n) a {
+	color:  #343534;
+}
+.sub:nth-of-type(2n) a:hover {
+	color: #f2fafe;
+	text-decoration-color: #f04938;
+}
 .sub:nth-of-type(2n) .accent {
 	fill: #f2fafe;
 }
+.sub:nth-of-type(2n) li:before {
+	color: #414042;
+}
+
 .sub:nth-of-type(3n) {
 	background: #f04938;
 	border-color: #414042;
@@ -80,8 +105,20 @@ li:before {
 	background: #f2fafe;
 	border-color: #479ea3;
 }
+
+.sub:nth-of-type(4n) a {
+	color: #00a9b3;
+	text-decoration-color: #f04938;
+}
+.sub:nth-of-type(4n) a:hover {
+	color: #f04938;
+	text-decoration-color: transparent;
+}
 .sub:nth-of-type(4n) .section-hed {
 	color: #414042;
+}
+.sub:nth-of-type(4n) li:before {
+	color: #479ea3;
 }
 .sub:nth-of-type(4n) .accent {
 	fill: #479ea3;

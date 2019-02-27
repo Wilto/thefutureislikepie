@@ -61,61 +61,33 @@
 		<link rel="stylesheet" type="text/css" href="/_assets/css/all.css">
 	</head>
 	<body>
-
+		{% if img %}
+		<img src="/blog/img/{{ img }}-5.jpg" alt="{{ alt }}" class="post-art">
+		{% endif %}
 		<header class="site-head">
+
 			<div class="sub-body">
-				<h1 class="logo"><img src="/_assets/img/logo.svg" alt="{{ data.name | safe }}"></h1>
-				
+				<h1 class="logo"><a href="/"><img src="/_assets/img/logo.svg" alt="{{ data.name | safe }}"></a></h1>
 			</div>
 		</header>
 
 		<main role="main" id="main"{% if templateClass %} class="{{ templateClass }}"{% endif %}>
 			<div class="body">
-				<div class="sub-body">
-					<p class="lede page-lede">{{ lede | safe }}</p>
-					<h2 class="page-hed">{{ title | safe }}</h2>
-					<div class="hero">
-						{{ content | safe }}
-					</div>
-				</div>
-				{% set sections = collections.sections | reverse %}
-				{%- for section in sections-%}
-					{% if section.data.pageClass == "contact" %}
-					{% include "contact.njk" %}
-					{% else %}
-					{% include "section.njk" %}
-					{% endif %}
-				{%- endfor -%}
+				{{ layoutContent | safe }}
 			</div>
 		</main>
 
-
 		<footer class="site-foot">
-			<p>Built with <a href="https://www.11ty.io/">Eleventy</a>. The source is available on <a href="https://github.com/Wilto/hire.wil.to">GitHub</a>.</p>
-			<p>For questions, comments, or problems using the site, <a href="https://github.com/Wilto/hire.wil.to/issues">report an issue</a>.</p>
+			<div class="sub-body">
+				<p>Built with <a href="https://www.11ty.io/">Eleventy</a>. The source is available on <a href="https://github.com/Wilto/hire.wil.to">GitHub</a>.</p>
+				<p>For questions, comments, or problems using the site, <a href="https://github.com/Wilto/hire.wil.to/issues">report an issue</a>.</p>
+			</div>
 		</footer>
 
 		<script>
 			if( 'serviceWorker' in navigator && window.location.hostname !== "localhost" ) {
 				navigator.serviceWorker.register('sw.js');
 			}
-		</script>
-
-		<script>
-			var _paq = _paq || [];
-			_paq.push(['trackPageView']);
-			_paq.push(['enableLinkTracking']);
-			(function() {
-				if( !navigator.onLine ) {
-					return;
-				}
-				var u="https://analytics.wiltomakesfood.com/";
-				_paq.push(['setTrackerUrl', u+'piwik.php']);
-				_paq.push(['setSiteId', '4']);
-				
-				var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-				g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
-			})();
 		</script>
 	</body>
 </html>

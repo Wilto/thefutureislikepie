@@ -1,0 +1,21 @@
+---
+layout: base.njk
+templateClass: tmpl-home
+---
+
+<div class="sub-body">
+	<p class="lede page-lede">{{ lede | safe }}</p>
+	<h2 class="page-hed">{{ title | safe }}</h2>
+	<div class="hero">
+		{{ content | safe }}
+		<a href="#" class="btn btn-cta">Contact Link</a>
+	</div>
+</div>
+{% set sections = collections.sections | reverse %}
+{%- for section in sections-%}
+	{% if section.data.pageClass == "contact" %}
+	{% include "contact.njk" %}
+	{% else %}
+	{% include "section.njk" %}
+	{% endif %}
+{%- endfor -%}

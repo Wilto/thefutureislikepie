@@ -1,18 +1,34 @@
 /* Adelle Sans */
 @font-face {
-    font-family: 'AdelleSans';
-    src: url('/_assets/fonts/AdelleSans-Bold.woff2') format('woff2'),
-        url('/_assets/fonts/AdelleSans-Bold.woff') format('woff');
+    font-family: 'Domaine';
+    src: url('/_assets/fonts/Domaine.woff2') format('woff2'),
+        url('/_assets/fonts/Domaine.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Domaine';
+    src: url('/_assets/fonts/Domaine-Italic.woff2') format('woff2'),
+        url('/_assets/fonts/Domaine-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Domaine';
+    src: url('/_assets/fonts/Domaine-Bold.woff2') format('woff2'),
+        url('/_assets/fonts/Domaine-Bold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
 }
 @font-face {
-    font-family: 'AdelleSans';
-    src: url('/_assets/fonts/AdelleSans-Light.woff2') format('woff2'),
-        url('/_assets/fonts/AdelleSans-Light.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+    font-family: 'Domaine';
+    src: url('/_assets/fonts/Domaine-BoldItal.woff2') format('woff2'),
+        url('/_assets/fonts/Domaine-BoldItal.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
     font-display: swap;
 }
 
@@ -44,25 +60,35 @@
 
 
 p {
-    font-family: AdelleSans;
-    font-weight: 100;
-    line-height: 1.4;
+    font-family: Domaine, serif;
+    font-weight: normal;
+    font-size: 1.05em;
+    line-height: 1.5;
     margin: .25em 0 .5em 0;
+    max-width: 45em;
 }
 ul {
     list-style: none;
+    padding: 0;
+}
+@media(min-width: 40em ) {
+    ul {
+        margin-left: 2.5%;
+    }
 }
 li {
-    font-size: .9em;
-    margin: .3em 0;
-    padding-left: .85em;
+    font-family: Domaine, serif;
+    margin: .85em 10% .85em 0;
+    padding-left: .75em;
+    line-height: 1.4;
     margin-left: 0;
     position: relative;
 }
+
 li:before {
     content: "\2022";
     display: block;
-    line-height: 1.1;
+    line-height: 1.3;
     position: absolute;
     left: 0;
     top: 0;
@@ -96,50 +122,64 @@ li:before {
 
 .lede {
     font-size: 1.3em;
+    line-height: 1.25;
     font-family: Sofia, sans-serif;
     font-weight: 100;
-    margin: 0 0 1.5em 0;
+    margin: 0 0 1.25em 0;
 }
 
 .lede strong {
     font-weight: 800;
 }
 
-.site-lede {
-    font-size: 1.2em;
-    line-height: 1.3;
-    width: 90%;
-    max-width: 32.5em;
-    margin: 0;
-}
-@media( min-width: 40em ) {
-    .site-lede {
-        font-size: 3vw;
-    }
-}
-@media( min-width: 55em ) {
-    .site-lede {
-        font-size: 1.65em;
-    }
-}
-
-
 .page-hed {
     font-family: Sofia, sans-serif;
-    font-size: 1.8em;
-    padding-right: 1.5em;
+    font-size: 1.55em;
     line-height: 1.1;
     font-weight: normal;
-    margin: .125em 0 1.25em 0;
+    margin: .125em 0 1em 0;
+    padding-bottom: 1em;
+    position: relative;
 }
-@media( min-width: 32.5em ) {
+.page-hed:after {
+    content:"";
+    display: block;
+    width: 15%;
+    height: 4px;
+    border-radius: 2px;
+    background: #f04938;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+@media( min-width: 35.5em ) {
     .page-hed {
-        font-size: 5.5vw;
+        font-size: 4.35vw;
     }
 }
 @media( min-width: 55em ) {
     .page-hed {
-        font-size: 2.85em;
+        font-size: 2.4em;
+    }
+}
+
+
+.post-copy p {
+    max-width: 42.5em;
+}
+.tmpl-post .page-hed {
+    font-size: 2.2em;
+    padding-bottom: .5em;
+    margin-bottom: .75em;
+}
+@media( min-width: 34em ) {
+    .tmpl-post .page-hed {
+        font-size: 6.5vw;
+    }
+}
+@media( min-width: 54em ) {
+    .tmpl-post .page-hed {
+        font-size: 3.5em;
     }
 }
 
@@ -151,8 +191,67 @@ li:before {
 }
 
 .hero {
-    font-family: Sofia, sans-serif;
-    font-size: 1.4em;
+    font-size: .9em;
+    padding-right: 2em;
+    line-height: 1.3;
     font-weight: 100;
 }
+@media( min-width: 50em ) {
+    .hero {
+        font-size: 2.5vw;
+    }
+}
+@media( min-width: 60em ) {
+    .hero {
+        font-size: 1.5em;
+    }
+}
+.hero p {
+    font-size: .95em;
+}
+.hero li {
+    font-size: .875em;
+    margin: .55em 0;
+}
 
+.tmpl-post .hero p {
+    font-style: italic;
+    font-weight: bold;
+}
+.tmpl-post .hero p {
+    font-size: 1.2em;
+}
+@media( min-width: 36em ) {
+    .tmpl-post .hero {
+        font-size: 2.5vw;
+    }
+}
+@media( min-width: 52em ) {
+    .tmpl-post .hero {
+        font-size: 1.3em;
+    }
+}
+
+.year-hed {
+    font-family: Sofia, sans-serif;
+    font-weight: bold;
+    font-size: .95em;
+}
+.month-hed {
+    color: #999;
+    font-size: .85em;
+    text-align: right;
+    margin-top: .2em;
+    padding-top: .25em;
+    letter-spacing: .055em;
+    border-top: 1px solid #ccc;
+    font-family: Sofia, sans-serif;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+.post-hed {
+    font-family: Sofia, sans-serif;
+    font-size: 1.8em;
+    margin: 0;
+}

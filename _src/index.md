@@ -1,11 +1,10 @@
 ---
-layout: base.njk
-title: I make information easier to use.
-lede: "My name is <strong>Lisa Maria Martin</strong>, and I am a consultant specializing in information architecture, content strategy, and user experience design."
+layout: home.njk
+title: "My name is <strong>Lisa Maria Martin</strong>, and I am a consultant specializing in information architecture, content strategy, and user experience design."
 ---
 
-I partner with agencies and clients to build well-structured websites by: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et [a big bright link](#) dolore magna aliqua. Ut enim ad minim veniam,
 quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea.
 
 * Analyzing web content to identify current challenges and potential solutions

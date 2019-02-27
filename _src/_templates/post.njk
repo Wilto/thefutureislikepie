@@ -1,0 +1,15 @@
+---
+layout: base.njk
+templateClass: tmpl-post
+---
+
+<div class="sub-body">
+
+	<h2 class="page-hed">{{ title | safe }}</h2>
+	<div class="hero">
+		<p>{{ lede | safe }}</p>
+	</div>
+	<div class="post-copy">
+		{{ content | safe }}
+	</div>
+</div>

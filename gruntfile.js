@@ -15,6 +15,8 @@ module.exports = function(grunt) {
 	grunt.registerTask('default', [
 		'concat:css',
 		'uglify',
+		'responsive_images',
+		'imagemin',
 		'cssmin:css'
 	]);
 

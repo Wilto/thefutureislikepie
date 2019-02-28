@@ -7,12 +7,19 @@ module.exports = function(eleventyConfig) {
 		return DateTime.fromJSDate(dateObj).toFormat(" LLLL dd, yyyy");
 	});
 
-	// all posts
+	// Homepage Sections
 	eleventyConfig.addCollection("sections", function(collection) {
 		return collection.getAllSorted().filter(function(item) {
 			return item.inputPath.match(/^\.\/_src\/sections\//) !== null;
 		}).sort(function(a, b) {
 			return b.data.order - a.data.order;
+		});
+	});
+
+	// Blog posts
+	eleventyConfig.addCollection("blogposts", function(collection) {
+		return collection.getAllSorted().filter(function(item) {
+			return item.inputPath.match(/^\.\/_src\/blog\//) !== null;
 		});
 	});
 

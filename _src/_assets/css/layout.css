@@ -6,6 +6,13 @@ body {
 	background-position: center top;
 	background-attachment: fixed;
 }
+.site-foot {
+	background: url(/_assets/img/header.jpg);
+	background-size: auto 30vw;
+	background-repeat: no-repeat;
+	background-position: center bottom;
+	background-attachment: fixed;
+}
 
 @media( min-width: 45em ) {
 	body {
@@ -21,7 +28,7 @@ body {
 		margin-top: 12em;
 	}
 }
-img.post-art+.site-head {
+.post-art+.site-head {
 	margin-top: -.5em;
 }
 
@@ -55,6 +62,7 @@ img.post-art+.site-head {
 }
 .tmpl-post {
 	padding-top: 4em;
+	padding-bottom: 4em;
 }
 .post-copy {
 	margin-top: 1.25em;
@@ -62,8 +70,37 @@ img.post-art+.site-head {
 	line-height: 1.2;
 }
 
-@supports( display: grid ) {
+.site-foot {
+}
 
+.foot-wrap {
+	background: #333;
+}
+.site-foot .sub-body {
+	margin: 0 auto;
+	padding: 0;
+	max-width: 90%;
+}
+
+@supports( display: grid ) {
+	.bio {
+		display: grid;
+		grid-template-columns: 22% auto;
+		align-items: center;
+	}
+}
+
+.bio {
+	margin: 1em 0;
+}
+.avatar {
+	border-radius: 50%;
+	display: block;
+	overflow: hidden;
+	margin-right: 1.5em;
+}
+.avatar img {
+	display: block;
 }
 
 

@@ -1,4 +1,27 @@
-<!doctype html>
+{% macro respimg(path, img, sizes, alt, lazy=false) %}
+	<picture class="post-art">
+		<source type="image/webp"
+			sizes="{{ sizes }}"
+			srcset="
+				{{ path }}{{ img }}-1.webp 600w,
+				{{ path }}{{ img }}-2.webp 799w,
+				{{ path }}{{ img }}-3.webp 1000w,
+				{{ path }}{{ img }}-4.webp 1400w,
+				{{ path }}{{ img }}-5.webp 2000w,
+				{{ path }}{{ img }}-6.webp 2400w">
+		<img 
+			sizes="{{ sizes }}"
+			srcset="
+				{{ path }}{{ img }}-1.jpg 600w,
+				{{ path }}{{ img }}-2.jpg 799w,
+				{{ path }}{{ img }}-3.jpg 1000w,
+				{{ path }}{{ img }}-4.jpg 1400w,
+				{{ path }}{{ img }}-5.jpg 2000w,
+				{{ path }}{{ img }}-6.jpg 2400w"
+			src="{{ path }}{{ img }}-6.jpg" 
+			alt="{{ alt }}">
+	</picture>
+{% endmacro %}<!doctype html>
 <html lang="en" class="fonts">
 	<head>
 		<meta charset="utf-8">
@@ -62,7 +85,7 @@
 	</head>
 	<body>
 		{% if img %}
-		<img src="/blog/img/{{ img }}-5.jpg" alt="{{ alt }}" class="post-art">
+		{{ respimg('/blog/img/', img, "100vw", alt ) }}
 		{% endif %}
 		<header class="site-head">
 
@@ -78,9 +101,10 @@
 		</main>
 
 		<footer class="site-foot">
-			<div class="sub-body">
-				<p>Built with <a href="https://www.11ty.io/">Eleventy</a>. The source is available on <a href="https://github.com/Wilto/hire.wil.to">GitHub</a>.</p>
-				<p>For questions, comments, or problems using the site, <a href="https://github.com/Wilto/hire.wil.to/issues">report an issue</a>.</p>
+			<div class="foot-wrap">
+				<div class="sub-body">
+					<p class="copyright">Copyright 2012–2019 Lisa Maria Martin</p>
+				</div>
 			</div>
 		</footer>
 

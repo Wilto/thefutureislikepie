@@ -2,6 +2,7 @@
 title: "Pivot Tables are Magic"
 lede: "For me, working with automated crawl data is about translation: how do I make meaning out of these robot results? How do I condense the noisy numbers into a signal—something that provides insights for my strategy and brings my clients along on the journey?"
 img: pivot-tables
+date: 2019-01-25
 alt: Here’s some lockers or whatever.
 ---
 

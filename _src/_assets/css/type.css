@@ -64,7 +64,6 @@ p {
     font-weight: normal;
     font-size: 1.05em;
     line-height: 1.5;
-    margin: .25em 0 .5em 0;
     max-width: 45em;
 }
 ul {
@@ -214,6 +213,9 @@ li:before {
     margin: .55em 0;
 }
 
+.tmpl-post .hero {
+    margin-bottom: .75em;
+}
 .tmpl-post .hero p {
     font-style: italic;
     font-weight: bold;
@@ -237,21 +239,42 @@ li:before {
     font-weight: bold;
     font-size: .95em;
 }
+.postdate,
 .month-hed {
-    color: #999;
-    font-size: .85em;
-    text-align: right;
+    font-size: .8em;
     margin-top: .2em;
     padding-top: .25em;
     letter-spacing: .055em;
-    border-top: 1px solid #ccc;
     font-family: Sofia, sans-serif;
     font-weight: normal;
     text-transform: uppercase;
+}
+.month-hed {
+    text-align: right;
+    border-top: 1px solid #ccc;
 }
 
 .post-hed {
     font-family: Sofia, sans-serif;
     font-size: 1.8em;
     margin: 0;
+}
+
+.bio p {
+    font-family: Sofia, sans-serif;
+    font-size: 1.2em;
+    font-weight: 100;
+}
+
+
+.copyright {
+    text-align: right;
+    display: block;
+    font-style: italic;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 1em;
+    font-size: .95em;
+    padding-top: .75em;
+    max-width: 100%;
 }

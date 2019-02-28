@@ -30,7 +30,8 @@
     "grunt-contrib-uglify-es": "^3.3.0",
     "grunt-contrib-watch": "^1.1.0",
     "grunt-responsive-images": "^1.10.1",
-    "imagemin-webp": "^5.0.0"
+    "imagemin-webp": "^5.0.0",
+    "luxon": "^1.11.3"
   },
   "dependencies": {
     "imagemin-mozjpeg": "^8.0.0"

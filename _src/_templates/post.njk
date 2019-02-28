@@ -4,7 +4,9 @@ templateClass: tmpl-post
 ---
 
 <div class="sub-body">
-
+	{% if date %}
+	<p class="postdate">{{ date | formatDate }}</p>
+	{% endif %}
 	<h2 class="page-hed">{{ title | safe }}</h2>
 	<div class="hero">
 		<p>{{ lede | safe }}</p>

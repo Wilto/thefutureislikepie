@@ -58,6 +58,11 @@ li:before {
 	color: #414042;
 }
 
+.postdate,
+.month-hed {
+	color: rgba(65, 64, 66, .8);
+}
+
 /* Panel theming */
 .sub {
 	background: #343534;
@@ -128,4 +133,20 @@ li:before {
 .sub:nth-of-type(4n) p,
 .sub:nth-of-type(4n) li {
 	color: #414042;
+}
+
+.site-foot {
+	border-top: .45em solid #f04938;
+}
+
+.bio {
+    color: #f2fafe;
+}
+
+.copyright {
+	color: rgba(242,250,254,.5);
+}
+
+.avatar {
+	border: .35em solid #f2fafe;
 }

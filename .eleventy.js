@@ -1,5 +1,11 @@
+const { DateTime } = require("luxon");
+
 module.exports = function(eleventyConfig) {
 	const CleanCSS = require('clean-css');
+
+	eleventyConfig.addFilter("formatDate", dateObj => {
+		return DateTime.fromJSDate(dateObj).toFormat(" LLLL dd, yyyy");
+	});
 
 	// all posts
 	eleventyConfig.addCollection("sections", function(collection) {

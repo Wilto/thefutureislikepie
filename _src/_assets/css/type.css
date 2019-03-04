@@ -212,6 +212,10 @@ li:before {
     font-size: .875em;
     margin: .55em 0;
 }
+.hero strong,
+.hero b {
+    font-weight: bold;
+}
 
 .tmpl-post .hero {
     margin-bottom: .75em;

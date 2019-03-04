@@ -1,18 +1,12 @@
-# Okay, so.
+# Getting Started
 
-Clone this sucker.
-
+If you don’t have them already, you’ll need the following:
 `$ npm install -g grunt-cli`
 `$ npm install -g @11ty/eleventy`
 
-You’ll need to install GraphicsMagick for the automated responsive images:
-
+You’ll need to install GraphicsMagick for the automated responsive images. [Homebrew](https://brew.sh/) is your best bet:
 `$ brew install GraphicsMagick`
 
-Then run an  `npm install` and you should be in business.
+Then a spry `npm install` and you should be in business.
 
-For now: 
-1. `grunt`/`grunt watch` for your CSS concat/minification and `sw.js` uglification.
-2. `eleventy --serve` to run the site.
-
-I’ll get these combined into a single script in a bit.
+`$ npm run dev` will run both `grunt watch` and `eleventy --serve`. By default, the local dev server will pop up at http://localhost:8080, but your milage may vary—the URL will be in the output of running `dev`.

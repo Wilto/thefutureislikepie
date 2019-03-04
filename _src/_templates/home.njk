@@ -4,7 +4,9 @@ templateClass: tmpl-home
 ---
 
 <div class="sub-body">
+	{% if lede %}
 	<p class="lede page-lede">{{ lede | safe }}</p>
+	{% endif %}
 	<h2 class="page-hed">{{ title | safe }}</h2>
 	<div class="hero">
 		{{ content | safe }}

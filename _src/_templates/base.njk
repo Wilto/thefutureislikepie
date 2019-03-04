@@ -54,9 +54,9 @@
 				"url": "{{ data.url }}",
 				"title": "{{ data.name }}",
 				"author_name": "{{ data.author.name }}",
-				"logo": "{{ data.url }}/_assets/img/card.gif",
+				"logo": "{{ data.url }}/_assets/img/card.jpg",
 				"sameAs" : [
-					"https://twitter.com/wilto"
+					"https://twitter.com/redsesame"
 				] 
 			}
 		</script>
@@ -72,9 +72,9 @@
 		<meta name="twitter:description" content="{{ title }}">
 		<meta property="og:description" content="{{ title }}">
 
-		<meta name="twitter:image" content="https://jovial-brattain-b476c9.netlify.com/_assets/img/card.jpg">
+		<meta name="twitter:image" content="{{ data.url }}/_assets/img/card.jpg">
 		<meta name="twitter:image:alt" content="{{ data.name }}">
-		<meta property="og:image" content="https://jovial-brattain-b476c9.netlify.com/_assets/img/card.jpg">
+		<meta property="og:image" content="{{ data.url }}/_assets/img/card.jpg">
 		<meta property="og:image:alt" content="{{ data.name }}">
 
 		<meta name="author" content="{{ data.author.name }}">

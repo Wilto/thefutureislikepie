@@ -1,10 +1,13 @@
 # Getting Started
 
 If you don’t have them already, you’ll need the following:
+
 `$ npm install -g grunt-cli`
+
 `$ npm install -g @11ty/eleventy`
 
 You’ll need to install GraphicsMagick for the automated responsive images. [Homebrew](https://brew.sh/) is your best bet:
+
 `$ brew install GraphicsMagick`
 
 Then a spry `npm install` and you should be in business.

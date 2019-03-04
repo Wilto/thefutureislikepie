@@ -11,8 +11,8 @@ https://www.filamentgroup.com/
 (function() {
 	"use strict";
 
-	const version = "1";
-	const cacheName = version + "::wiltomakesfood:";
+	const version = "2";
+	const cacheName = version + "::futureislikepie:";
 
 	const staticCacheName = cacheName + "static";
 	const pagesCacheName = cacheName + "pages";
@@ -22,18 +22,9 @@ https://www.filamentgroup.com/
 		"/"
 	];
 	const staticAssets = [
-		'/_assets/fonts/TiemposHeadline-Regular.woff',
-		'/_assets/fonts/TiemposHeadline-Regular.woff2',
-		'/_assets/fonts/AdelleSans-Light.woff2',
-		'/_assets/fonts/TiemposTextWeb-Regular.woff2',
-		'/_assets/fonts/TiemposTextWeb-RegularItalic.woff2',
-		'/_assets/fonts/AdelleSans-Bold.woff2',
-		'/_assets/fonts/AdelleSans-Light.woff',
-		'/_assets/fonts/TiemposTextWeb-Regular.woff',
-		'/_assets/fonts/TiemposTextWeb-RegularItalic.woff',
-		'/_assets/css/globals.css',
-		'/_assets/css/layout.css',
-		'/_assets/css/type.css'
+		'/_assets/css/all.css',
+		'/_assets/img/logo.svg',
+		'/_assets/img/header.jpg'
 	];
 
 	function updateStaticCache() {

@@ -86,7 +86,6 @@
 		{{ respimg('/blog/img/', img, "100vw", alt ) }}
 		{% endif %}
 		<header class="site-head">
-
 			<div class="sub-body">
 				<h1 class="logo"><a href="/"><img src="/_assets/img/logo.svg" alt="{{ data.name | safe }}"></a></h1>
 			</div>
@@ -101,13 +100,14 @@
 		<footer class="site-foot">
 			<div class="foot-wrap">
 				<div class="sub-body">
+					<p class="credit">Site by <a href="https://hire.wil.to">Mat Marquis</a></p>
 					<p class="copyright">Copyright 2012–2019 Lisa Maria Martin</p>
 				</div>
 			</div>
 		</footer>
 
 		<script>
-			if( 'serviceWorker' in navigator ) {
+			if( 'serviceWorker' in navigator && window.location.hostname !== "localhost" ) {
 				navigator.serviceWorker.register('sw.js');
 			}
 		</script>

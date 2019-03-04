@@ -6,13 +6,6 @@ body {
 	background-position: center top;
 	background-attachment: fixed;
 }
-.site-foot {
-	background: url(/_assets/img/header.jpg);
-	background-size: auto 30vw;
-	background-repeat: no-repeat;
-	background-position: center bottom;
-	background-attachment: fixed;
-}
 
 @media( min-width: 45em ) {
 	body {
@@ -71,10 +64,12 @@ body {
 }
 
 .site-foot {
+	background: #333;
 }
 
 .foot-wrap {
-	background: #333;
+	display: block;
+	width: 100%;
 }
 .site-foot .sub-body {
 	margin: 0 auto;
@@ -83,10 +78,18 @@ body {
 }
 
 @supports( display: grid ) {
-	.bio {
-		display: grid;
-		grid-template-columns: 22% auto;
-		align-items: center;
+	@media( min-width: 45em ) {
+		.bio {
+			display: grid;
+			grid-template-columns: 22% auto;
+			align-items: center;
+		}
+
+		.foot-wrap .sub-body {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			align-items: center;
+		}
 	}
 }
 

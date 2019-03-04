@@ -173,6 +173,7 @@ li:before {
     color: #f2fafe;
 }
 
+.credit,
 .copyright {
 	color: rgba(242,250,254,.5);
 }

@@ -30,6 +30,9 @@ body {
 	max-width: 5em;
 	margin: -3.25em auto 0 auto;
 }
+.logo a {
+	display: block;
+}
 .logo img {
 	top: 0;
 	width: 100%;
@@ -72,38 +75,77 @@ body {
 	width: 100%;
 }
 .site-foot .sub-body {
-	margin: 0 auto;
-	padding: 0;
-	max-width: 90%;
+	padding-bottom:0;
 }
 
 @supports( display: grid ) {
 	@media( min-width: 45em ) {
-		.bio {
-			display: grid;
-			grid-template-columns: 22% auto;
-			align-items: center;
-		}
-
-		.foot-wrap .sub-body {
+		.foot-details {
 			display: grid;
 			grid-template-columns: 1fr 1fr;
 			align-items: center;
 		}
 	}
+	.col-ab {
+		width: 66%;
+		max-width: 800px;
+		display: grid;
+		grid-gap: 2.5%;
+		grid-template-columns: auto auto;
+	}
+	.col-ab input {
+		width: 100%;
+	}
 }
 
 .bio {
-	margin: 1em 0;
+	padding-bottom: 3.5em;
+	margin: 1.5em 0 0 0;
 }
+.bio:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.bio-copy p:first-of-type {
+	margin-top: 0;
+}
+
 .avatar {
 	border-radius: 50%;
 	display: block;
+	float: right;
 	overflow: hidden;
-	margin-right: 1.5em;
+	shape-outside: circle(50%);
+	shape-margin: .5em;
+	margin-left: 2.5%;
+	margin-bottom: 2.5%;
+	max-width: 10em;
+	min-width:7.5em;
+	width: 25%;
 }
 .avatar img {
 	display: block;
 }
 
+label {
+	display: block;
+	padding-bottom: .25em;
+}
 
+input,
+textarea {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	margin-bottom: 1.5em;
+	display: block;
+	width: 66%;
+	max-width: 800px;
+}
+textarea {
+	width: 100%;
+	max-width: 100%;
+	min-height: 8.5em;
+}

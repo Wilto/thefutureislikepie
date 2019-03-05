@@ -16,6 +16,11 @@ module.exports = function(eleventyConfig) {
 		});
 	});
 
+	// Bio(s)
+	eleventyConfig.addCollection("bios", function(collection) {
+		return collection.getFilteredByGlob("**/bio.md");
+ 	});
+
 	// Blog posts
 	eleventyConfig.addCollection("blogposts", function(collection) {
 		return collection.getAllSorted().filter(function(item) {

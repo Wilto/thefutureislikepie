@@ -22,7 +22,7 @@ main {
 a {
 	color: #00a9b3;
 	transition: color .2s linear, text-decoration-color .2s linear;
-	text-decoration-color: #f04938;
+	text-decoration-color: rgba(242,250,254,1);
 	font-weight: normal;
 	box-decoration-break: clone;
 	text-decoration-skip: ink;
@@ -32,9 +32,21 @@ a:hover {
 	text-decoration-color: transparent;
 	cursor: pointer;
 }
+a:focus {
+	box-shadow: none;
+	outline: 2px dotted rgba(65, 64, 66, 1);
+	text-decoration: none;
+}
+.hero a {
+	text-decoration-color: rgba(240, 73, 56, 1);
+}
 .hero p, .hero li,
 .inv p, .inv li {
 	color: #414042;
+}
+
+.logo a:focus {
+	outline: 2px dotted rgba(242,250,254,.9);
 }
 
 li:before {
@@ -80,18 +92,25 @@ li:before {
 	z-index: 3;
 	fill: #f2fafe;
 }
+.bio a,
 .sub a {
 	background: rgba(0,0,0,.85);
 	color: #fff;
-	text-decoration: none;
-	transition: background .2s linear;
+	transition: background .2s linear, text-decoration-color .2s linear;
 	display: inline-block;
 	padding: 0 2px;
 	border-radius: .15em;
 }
+.bio a:hover,
 .sub a:hover {
 	background: rgba(0,0,0,1);
+	text-decoration-color: transparent;
 }
+.bio a:focus,
+.sub a:focus {
+	outline: 2px dotted rgba(242,250,254,.8);
+}
+
 .sub:nth-of-type(2n) {
 	background: #0098a1;
 }
@@ -100,7 +119,6 @@ li:before {
 }
 .sub:nth-of-type(2n) a:hover {
 	color: #f2fafe;
-	text-decoration-color: #f04938;
 }
 .sub:nth-of-type(2n) .accent {
 	fill: #f2fafe;
@@ -120,7 +138,6 @@ li:before {
 .sub:nth-of-type(3n) a {
 	background: rgba(0,0,0,.2);
 	color: #f2fafe;
-	text-decoration: none;
 	transition: background .2s linear;
 	display: inline-block;
 	padding: 0 2px;
@@ -137,16 +154,17 @@ li:before {
 }
 
 .sub:nth-of-type(4n) a {
-	background: none;
-	color: #00a9b3;
+	background: rgba(0, 169, 179, .1);
+	color: #414042;
 	text-decoration: underline;
-	transition: text-decoration-color .2s linear;
-	text-decoration-color: #f04938;
 }
 .sub:nth-of-type(4n) a:hover {
-	color: #f04938;
-	background: none;
+	background: rgba(0, 169, 179, .25);
+	color: #414042;
 	text-decoration-color: transparent;
+}
+.sub:nth-of-type(4n) a:focus {
+	outline: 2px dotted rgba(0,0,0,.8);
 }
 .sub:nth-of-type(4n) .section-hed {
 	color: #414042;
@@ -170,7 +188,8 @@ li:before {
 }
 
 .bio {
-    color: #f2fafe;
+	color: #f2fafe;
+	border-bottom: 1px solid rgba(242,250,254,.25);
 }
 
 .credit,
@@ -178,6 +197,23 @@ li:before {
 	color: rgba(242,250,254,.5);
 }
 
+.credit a {
+	color: rgba(242,250,254,.75);
+	text-decoration: none;
+}
+
 .avatar {
 	border: .35em solid #f2fafe;
+}
+
+label {
+	color: #f2fafe;
+}
+
+
+input[type="email"] {
+	color: rgba(65, 64, 66, .8);
+}
+input[type="email"]:valid {
+	color: rgba(65, 64, 66, 1);
 }

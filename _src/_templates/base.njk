@@ -81,7 +81,7 @@
 
 		<link rel="stylesheet" type="text/css" href="/_assets/css/all.css">
 	</head>
-	<body>
+	<body {% if art %}style="background-image: url(/_assets/img/{{ art }});"{% endif %}>
 		{% if img %}
 		{{ respimg('/blog/img/', img, "100vw", alt ) }}
 		{% endif %}
@@ -106,7 +106,11 @@
 					{%- endfor -%}
 				</div>
 				<div class="foot-details">
+				{% if artcredit %}
+					<p class="credit">Header art by {% if arturl %}<a href="{{ arturl | url }}">{% endif %}{{ artcredit | safe }}{% if arturl %}</a>{% endif %}</p>
+{% endif %}
 					<p class="copyright">Copyright 2012–2019 Lisa Maria Martin</p>
+
 				</div>
 			</div>
 		</footer>

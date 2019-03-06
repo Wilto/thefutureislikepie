@@ -1,6 +1,5 @@
 body {
 	margin: 0;
-	background: url(/_assets/img/header.jpg);
 	background-size: auto 30vw;
 	background-repeat: no-repeat;
 	background-position: center top;
@@ -83,6 +82,13 @@ body {
 	padding: 0 2.5%;
 }
 @supports( display: grid ) {
+	@media( min-width: 45em ) {
+		.foot-details {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			align-items: center;
+		}
+	}
 	.col-ab {
 		width: 66%;
 		max-width: 800px;

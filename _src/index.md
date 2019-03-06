@@ -1,6 +1,9 @@
 ---
 layout: home.njk
 title: "My name is <strong>Lisa Maria Martin</strong>, and I am a consultant specializing in information architecture, content strategy, and user experience design."
+art: header.jpg
+artcredit: Stankface Deathpunch
+arturl: https://hire.wil.to
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod

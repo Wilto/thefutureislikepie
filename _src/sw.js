@@ -11,7 +11,7 @@ https://www.filamentgroup.com/
 (function() {
 	"use strict";
 
-	const version = "0";
+	const version = "3";
 	const cacheName = version + "::futureislikepie:";
 
 	const staticCacheName = cacheName + "static";

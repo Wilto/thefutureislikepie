@@ -97,7 +97,6 @@ li:before {
 	background: rgba(0,0,0,.85);
 	color: #fff;
 	transition: background .2s linear, text-decoration-color .2s linear;
-	display: inline-block;
 	padding: 0 2px;
 	border-radius: .15em;
 }
@@ -189,7 +188,11 @@ li:before {
 
 .bio {
 	color: #f2fafe;
-	border-bottom: 1px solid rgba(242,250,254,.25);
+}
+
+.foot-details {
+	background: rgba(0,0,0,.2);
+	border-top: 1px solid rgba(0,0,0,.25);
 }
 
 .credit,

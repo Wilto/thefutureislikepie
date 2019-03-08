@@ -1,7 +1,7 @@
 ---
 layout: bio.njk
 title: "Optional Bio Title"
-photo: photo.jpg
+photo: photo-2.jpg
 alt: "Portrait of Lisa Maria Martin."
 ---
 

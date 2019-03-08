@@ -271,7 +271,12 @@ li:before {
 .year-hed {
     font-family: Sofia, sans-serif;
     font-weight: bold;
-    font-size: .95em;
+    font-size: 1em;
+    margin-bottom: 0;
+    margin-top: 6.5em;
+}
+.sub-body .year-hed:first-of-type {
+    margin-top: 0;
 }
 .postdate,
 .month-hed {
@@ -287,14 +292,40 @@ li:before {
     margin-left: .5em;
 }
 .month-hed {
+    margin-top: 7.5em;
     text-align: right;
-    border-top: 1px solid #ccc;
+}
+.year-hed+.month-hed {
+    margin-top: .25em;
+}
+
+.tmpl-blog .post p {
+    font-size: 1.1em;
+    padding-right: 5%;
 }
 
 .post-hed {
     font-family: Sofia, sans-serif;
     font-size: 1.8em;
-    margin: 0;
+    margin: 0 0 .35em 0;
+    padding-bottom: .35em;
+    position: relative;
+}
+
+.post-hed:after {
+    content:"";
+    display: block;
+    width: 10%;
+    height: 3px;
+    border-radius: 2px;
+    background: #f04938;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.post-hed + p {
+    margin-top: .35em;
 }
 
 .bio p {
@@ -323,6 +354,14 @@ textarea {
     font-family: Domaine, serif;
     font-size: 1.1em;
     padding: .75em 1.5em .75em .75em;
+}
+
+
+.pagination {
+    font-family: Sofia, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: .045em;
+    font-size: .95em;
 }
 
 .copyright {

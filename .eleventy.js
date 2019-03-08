@@ -4,8 +4,17 @@ module.exports = function(eleventyConfig) {
 	const CleanCSS = require('clean-css');
 
 	eleventyConfig.addFilter("formatDate", dateObj => {
-		return DateTime.fromJSDate(dateObj).toFormat(" LLLL dd, yyyy");
+		return DateTime.fromJSDate(dateObj).toFormat("LLLL dd, yyyy");
 	});
+
+	eleventyConfig.addFilter("monthOnly", dateObj => {
+		return DateTime.fromJSDate(dateObj).toFormat("LLLL");
+	});
+
+	eleventyConfig.addFilter("yearOnly", dateObj => {
+		return DateTime.fromJSDate(dateObj).toFormat("yyyy");
+	});
+
 
 	// Homepage Sections
 	eleventyConfig.addCollection("sections", function(collection) {
@@ -22,19 +31,20 @@ module.exports = function(eleventyConfig) {
  	});
 
 	// Blog posts
-	eleventyConfig.addCollection("blogposts", function(collection) {
+/*	eleventyConfig.addCollection("blogposts", function(collection) {
 		return collection.getAllSorted().filter(function(item) {
 			return item.inputPath.match(/^\.\/_src\/blog\//) !== null;
 		});
-	});
+	});*/
+
+	eleventyConfig.addCollection("blogposts",
+		collection => collection
+			.getAllSorted()
+			.filter(item => item.url && item.inputPath.startsWith('./_src/blog/') )
+		);
 
 	eleventyConfig.addPassthroughCopy("_src/_assets");
 	eleventyConfig.addPassthroughCopy("_src/sw.js");
-
-	eleventyConfig.addFilter(
-		'cssmin',
-		code => new CleanCSS({}).minify(code).styles
-	);
 
 	return {
 		templateFormats: [

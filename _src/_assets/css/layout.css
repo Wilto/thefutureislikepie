@@ -52,12 +52,16 @@ body {
 	padding: 1.5em 2.5% 1.5em 2.5%;
 }
 
+.blog-index {
+	padding-bottom: 10em;
+}
+
 .post {
-	margin: 2.5em 0;
+	margin: 2.5em 2.5% 4em 2.5%;
 }
 .tmpl-post {
 	padding-top: 4em;
-	padding-bottom: 4em;
+	padding-bottom: 10em;
 }
 .post-copy {
 	margin-top: 1.25em;
@@ -80,15 +84,19 @@ body {
 
 .foot-details {
 	padding: 0 2.5%;
+	float: left;
+	clear: both;
+	width: 95%;
+}
+@media( min-width: 45em ) {
+	.foot-details > * {
+		float: right;
+	}
+	.foot-details > *:first-of-type {
+		float: left;
+	}
 }
 @supports( display: grid ) {
-	@media( min-width: 45em ) {
-		.foot-details {
-			display: grid;
-			grid-template-columns: 1fr 1fr;
-			align-items: center;
-		}
-	}
 	.col-ab {
 		width: 66%;
 		max-width: 800px;
@@ -152,4 +160,20 @@ textarea {
 	width: 100%;
 	max-width: 100%;
 	min-height: 8.5em;
+}
+
+.pagination {
+	clear: both;
+	float: left;
+	width: 100%;
+	position: relative;
+	bottom: -3.5em;
+	padding-top: .25em;
+}
+
+.pagination .newer {
+	float: left;
+}
+.pagination .older {
+	float: right;
 }

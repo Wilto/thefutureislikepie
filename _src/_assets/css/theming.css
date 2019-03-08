@@ -72,7 +72,13 @@ li:before {
 
 .postdate,
 .month-hed {
-	color: rgba(65, 64, 66, .8);
+	color:  #3f7d86;
+}
+.month-hed {
+	border-top: 1px solid #b3d0cb;
+}
+.year-hed {
+	color: #265757;
 }
 
 /* Panel theming */
@@ -191,8 +197,12 @@ li:before {
 }
 
 .foot-details {
-	background: rgba(0,0,0,.2);
+	background: rgba(0,0,0,.875);
 	border-top: 1px solid rgba(0,0,0,.25);
+}
+
+.pagination {
+	border-top: 1px solid #b3d0cb;
 }
 
 .credit,

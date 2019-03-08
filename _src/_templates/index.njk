@@ -1,6 +1,11 @@
 ---
 layout: base.njk
 templateClass: tmpl-blog
+pagination:
+  data: collections.blogposts
+  size: 25
+  reverse: true
+  alias: posts
 ---
 
 <div class="sub-body">
@@ -10,16 +15,36 @@ templateClass: tmpl-blog
 		{{ content | safe }}
 	</div>
 </div>
-<div class="sub-body">
-	<h3 class="year-hed">2019</h3>
-	<h4 class="month-hed">February</h4>
+<div class="sub-body blog-index">
+	{% asyncEach post in posts %}
+		{% set newYear = post.date | yearOnly %}
+		{% set newMonth = post.date | monthOnly %}
 
-	{% for post in collections.blogposts  %}
-	{% if post.url != "/blog/" %}
+		{% if prevYear != newYear %}
+			{% set prevYear = post.date | yearOnly %}
+			<h3 class="year-hed">{{ prevYear }}</h3>
+		{% endif %}
+
+		{% if prevMonth != newMonth %}
+			{% set prevMonth = post.date | monthOnly %}
+			<h4 class="month-hed">{{ prevMonth }}</h4>
+		{% endif %}
+
 		<div class="post">
-			<h5 class="post-hed"><a href="{{ post.url | url }} ">{{ post.data.title }}</a></h5>
+			<h5 class="post-hed"><a href="{{ post.url | url }}">{{ post.data.title }}</a></h5>
 			<p>{{ post.data.lede }}</p>
 		</div>
+	{% endeach %}
+
+	{% if pagination.previousPageHref or pagination.nextPageHref %}
+	<nav class="pagination">
+		{% if pagination.previousPageHref %}
+		<a href="{{ pagination.previousPageHref }}" class="newer">Newer</a>
 		{% endif %}
-	{% endfor %}
+
+		{% if pagination.nextPageHref %}
+		<a href="{{ pagination.nextPageHref }}" class="older">Older</a>
+		{% endif %}
+	</nav>
+	{% endif %}
 </div>

@@ -45,6 +45,7 @@ a:focus {
 	color: #414042;
 }
 
+
 .logo a:focus {
 	outline: 2px dotted rgba(242,250,254,.9);
 }
@@ -203,6 +204,10 @@ li:before {
 
 .pagination {
 	border-top: 1px solid #b3d0cb;
+}
+
+.inline-capt {
+	color: rgba(65, 64, 66, .8);
 }
 
 .credit,

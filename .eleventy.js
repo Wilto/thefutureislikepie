@@ -30,12 +30,29 @@ module.exports = function(eleventyConfig) {
 		return collection.getFilteredByGlob("**/bio.md");
  	});
 
-	// Blog posts
-/*	eleventyConfig.addCollection("blogposts", function(collection) {
-		return collection.getAllSorted().filter(function(item) {
-			return item.inputPath.match(/^\.\/_src\/blog\//) !== null;
-		});
-	});*/
+
+	eleventyConfig.addShortcode("respimg", function( img ) {
+		let id, rando,
+			retimg = `<img 
+				class="inline-img"
+				src="/img/1000/${ img.src }" 
+				alt="${ img.alt }"
+				srcset="/blog/img/400/${ img.src } 400w,
+						/blog/img/600/${ img.src } 600w,
+						/blog/img/800/${ img.src } 800w,
+						/blog/img/1000/${ img.src } 1000w"
+				sizes="${ img.sizes || "(min-width: 777px) 40em, 95vw" }">
+			`;
+
+		if( img.caption ) {
+			rando = Math.floor( Math.random() * 999 ) + 100;
+			id = img.src.slice( 0, img.src.indexOf( '.' ) ) + "-" + rando;
+
+			retimg = `<figure aria-labelledby="${ id }">${ retimg }<figcaption id="${ id }" class="inline-capt">${ img.caption }</figcaption></figure>`;
+		}
+
+		return retimg;
+	});
 
 	eleventyConfig.addCollection("blogposts",
 		collection => collection

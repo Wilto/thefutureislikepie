@@ -194,7 +194,41 @@ li:before {
 
 .post-copy p {
     max-width: 42.5em;
+    line-height: 1.55;
 }
+.post-copy a {
+    text-decoration: underline;
+    text-decoration-color: rgba(240, 73, 56, 1);
+}
+.post-copy a:hover {
+    text-decoration: none;
+}
+.post-copy h3,
+.post-copy h4 {
+    font-family: Sofia, sans-serif;
+    text-transform: uppercase;
+    margin: 2.75em 0 0 0;
+    letter-spacing: .045em;
+}
+.post-copy h4 {
+    font-size: .95em;
+}
+.post-copy h3,
+.post-copy h4 {
+
+}
+
+.post-copy figure {
+    margin: 1.5em 0;
+    padding: 0;
+}
+
+.inline-capt {
+    font-size: 1.1em;
+    margin-top: .25em;
+    font-style: italic;
+}
+
 .tmpl-post .page-hed {
     font-size: 2.2em;
     padding-bottom: .5em;

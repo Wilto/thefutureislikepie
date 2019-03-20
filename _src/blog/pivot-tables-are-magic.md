@@ -130,4 +130,4 @@ And pivot tables and pie charts aren’t the only players in my content analysis
 
 If you use automated crawls, and you’re new to pivot tables, I hope this has shown you one way that pivot tables might help you. My biggest recommendation is to experiment with them, since that’s how I’ve learned what I’ve learned. Poke at pivot tables with a sharp stick. Click and unclick every option. Ask, “What happens if I drag this field to *this* box instead?” See if they make some magic for you, too.
 
-*Photo by Jerry Kiesewetter on [Unsplash](https://unsplash.com/search/photos/numbers?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)*
+*Photo by Jerry Kiesewetter on [Unsplash](https://unsplash.com/)*

@@ -81,12 +81,11 @@
 
 		<link rel="stylesheet" type="text/css" href="/_assets/css/all.css">
 	</head>
-	<body>
+	<body {% if art %}style="background-image: url(/_assets/img/{{ art }});"{% endif %}>
 		{% if img %}
-		{{ respimg('/blog/img/', img, "100vw", alt ) }}
+		{{ respimg('/blog/img/headers/', img, "100vw", alt ) }}
 		{% endif %}
 		<header class="site-head">
-
 			<div class="sub-body">
 				<h1 class="logo"><a href="/"><img src="/_assets/img/logo.svg" alt="{{ data.name | safe }}"></a></h1>
 			</div>
@@ -101,13 +100,23 @@
 		<footer class="site-foot">
 			<div class="foot-wrap">
 				<div class="sub-body">
+					{% set bios = collections.bios | reverse %}
+					{%- for bio in bios -%}
+						{% include "bio.njk" %}
+					{%- endfor -%}
+				</div>
+				<div class="foot-details">
+				{% if artcredit %}
+					<p class="credit">Header art by {% if arturl %}<a href="{{ arturl | url }}">{% endif %}{{ artcredit | safe }}{% if arturl %}</a>{% endif %}</p>
+{% endif %}
 					<p class="copyright">Copyright 2012–2019 Lisa Maria Martin</p>
+
 				</div>
 			</div>
 		</footer>
 
 		<script>
-			if( 'serviceWorker' in navigator ) {
+			if( 'serviceWorker' in navigator && window.location.hostname !== "localhost" ) {
 				navigator.serviceWorker.register('sw.js');
 			}
 		</script>

@@ -1,5 +1,8 @@
 ---
 layout: home.njk
+art: header.jpg
+artcredit: Stankface Deathpunch
+arturl: https://hire.wil.to
 title: "My name is <strong>Lisa Maria Martin</strong>, and I am an independent consultant, speaker, editor, and writer."
 ---
 

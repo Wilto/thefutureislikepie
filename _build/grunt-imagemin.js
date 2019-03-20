@@ -14,7 +14,7 @@ module.exports = function(grunt) {
 				expand: true,
 				progressive: true,
 				cwd: '_site/blog/img',
-				src: ['*.{png,jpg,gif}'],
+				src: ['headers/*.{png,jpg,gif}'],
 				dest: '_site/blog/img'
 			}]
 		},

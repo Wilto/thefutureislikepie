@@ -4,8 +4,17 @@ module.exports = function(eleventyConfig) {
 	const CleanCSS = require('clean-css');
 
 	eleventyConfig.addFilter("formatDate", dateObj => {
-		return DateTime.fromJSDate(dateObj).toFormat(" LLLL dd, yyyy");
+		return DateTime.fromJSDate(dateObj).toFormat("LLLL dd, yyyy");
 	});
+
+	eleventyConfig.addFilter("monthOnly", dateObj => {
+		return DateTime.fromJSDate(dateObj).toFormat("LLLL");
+	});
+
+	eleventyConfig.addFilter("yearOnly", dateObj => {
+		return DateTime.fromJSDate(dateObj).toFormat("yyyy");
+	});
+
 
 	// Homepage Sections
 	eleventyConfig.addCollection("sections", function(collection) {
@@ -16,20 +25,43 @@ module.exports = function(eleventyConfig) {
 		});
 	});
 
-	// Blog posts
-	eleventyConfig.addCollection("blogposts", function(collection) {
-		return collection.getAllSorted().filter(function(item) {
-			return item.inputPath.match(/^\.\/_src\/blog\//) !== null;
-		});
+	// Bio(s)
+	eleventyConfig.addCollection("bios", function(collection) {
+		return collection.getFilteredByGlob("**/bio.md");
+ 	});
+
+
+	eleventyConfig.addShortcode("respimg", function( img ) {
+		let id, rando,
+			retimg = `<img 
+				class="inline-img"
+				src="/img/1000/${ img.src }" 
+				alt="${ img.alt }"
+				srcset="/blog/img/400/${ img.src } 400w,
+						/blog/img/600/${ img.src } 600w,
+						/blog/img/800/${ img.src } 800w,
+						/blog/img/1000/${ img.src } 1000w"
+				sizes="${ img.sizes || "(min-width: 777px) 40em, 95vw" }">
+			`;
+
+		if( img.caption ) {
+			rando = Math.floor( Math.random() * 999 ) + 100;
+			id = img.src.slice( 0, img.src.indexOf( '.' ) ) + "-" + rando;
+
+			retimg = `<figure aria-labelledby="${ id }">${ retimg }<figcaption id="${ id }" class="inline-capt">${ img.caption }</figcaption></figure>`;
+		}
+
+		return retimg;
 	});
+
+	eleventyConfig.addCollection("blogposts",
+		collection => collection
+			.getAllSorted()
+			.filter(item => item.url && item.inputPath.startsWith('./_src/blog/') )
+		);
 
 	eleventyConfig.addPassthroughCopy("_src/_assets");
 	eleventyConfig.addPassthroughCopy("_src/sw.js");
-
-	eleventyConfig.addFilter(
-		'cssmin',
-		code => new CleanCSS({}).minify(code).styles
-	);
 
 	return {
 		templateFormats: [

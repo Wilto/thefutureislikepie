@@ -1,0 +1,9 @@
+<div class="bio">
+	<img class="avatar" src="/_assets/img/{{ bio.data.photo }}" alt="{{ bio.data.alt }}">
+	<div class="bio-copy">
+		{% if bio.data.title %}
+		<h2 class="lede bio-hed">{{ bio.data.title | safe }}</h2>
+		{% endif %}
+		{{ bio.templateContent | safe }}
+	</div>
+</div>

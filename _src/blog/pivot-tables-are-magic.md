@@ -10,11 +10,7 @@ alt: Green and white mailboxes numbered one through seven.
 
 Automated audits are a common, and often crucial, tool in content work—but they’re nearly useless in their raw form:
 
-{% respimg 
-    src="pivot.jpg",
-    alt="Spreadsheet cells full of meaningless numbers.",
-    caption="This is an editable caption."
-%}
+![Spreadsheet cells full of meaningless numbers.](/blog/img/pivot.jpg)
 
 For me, working with automated crawl data is about translation: how do I make meaning out of these robot results? How do I condense the noisy numbers into a signal—something that provides insights for my strategy _and_ brings my clients along on the journey?
 
@@ -50,7 +46,7 @@ I use URL structure as my “site section” delineator—that is, I consider th
 
 In my last audit (potentially identifying information redacted!), you can see that I manually added not only a column for Section, but Subsection as well:
 
-![The audit data with new columns for Section and Subsection next to the Address column.](/blog/img/image.jpg)
+![The audit data with new columns for Section and Subsection next to the Address column.](/blog/img/audit-data.png)
 
 #### Step 2: Build the pivot table
 
@@ -58,21 +54,21 @@ Once I’ve manually added section data to the spreadsheet, I can set up my pivo
 
 That brings up this modal:
 
-![Excel's pop-up modal for creating a pivot table.](/blog/img/image.jpg)
+![Excel's pop-up modal for creating a pivot table.](/blog/img/excel-popup.png)
 
 The highlighted field shows the range of data selected (in this example, my sheet is called “Combined Results,” and I selected columns A through L). I always place it on a new worksheet (meaning new tab, same document), which opens up a tab *before* the one I’m already on, for reasons only clear to the Microsoft trickster deity.
 
 I click OK and my new tab is: blank. To populate the table, I have to tell it how to work with the data—that is, which columns I want to use as my criteria. The Pivot Table Fields modal shows all the columns I selected before:
 
-![Pivot Table Fields modal for selecting which data fields should appear in the table.](/blog/img/image.jpg)
+![Pivot Table Fields modal for selecting which data fields should appear in the table.](/blog/img/fields.png)
 
 Selecting one of those boxes—like Address—adds it to the areas underneath:
 
-![Pivot Table Fields modal with Count of Address in the Values area.](/blog/img/image.jpg)
+![Pivot Table Fields modal with Count of Address in the Values area.](/blog/img/areas.png)
 
 Excel automatically places it in Values, and automatically assigns it “Count” (you can change this to Sum, Average, Max, Min, etc. by clicking on the i icon). Meanwhile, elsewhere on the tab, a table has appeared:
 
-![The pivot table being built in the spreadsheet, showing Count of Address as "10283."](/blog/img/image.jpg)
+![The pivot table being built in the spreadsheet, showing Count of Address as "10283."](/blog/img/address.png)
 
 Not very exciting yet, but that’s because it’s only analyzing one thing: the Count (literally, it’s just counting) of all the entries in the column labeled Address. It’s telling me that there are 10,283 pages in my site, because there are 10,283 rows in my spreadsheet.
 
@@ -82,26 +78,23 @@ But the beauty of pivot tables is that I can complicate it, neatly.
 
 I go back to my pivot table fields, and I select Section (in addition to Address):
 
-{% respimg 
-    src="baguette-shape",
-    alt="Pivot Table Fields modal with both Address and Section selected."
-%}
+![Pivot Table Fields modal with both Address and Section selected.](/blog/img/fields2.png)
 
 Which, again, automatically adds it to the Values area below:
 
-![Pivot Table Fields modal with Count of Address and Count of Section in the Values area.](/blog/img/image.jpg)
+![Pivot Table Fields modal with Count of Address and Count of Section in the Values area.](/blog/img/areas2.png)
 
 But all this does is add another column to my useless table, telling me that there are 10,282 entries in the Section column:
 
-![The pivot table being built in the spreadsheet, showing Count of Address and Count of Section.](/blog/img/image.jpg)
+![The pivot table being built in the spreadsheet, showing Count of Address and Count of Section.](/blog/img/address2.png)
 
 What I want to know is *how many* pages are in *each* of the sections, and this is where pivot tables start to shine. I drag “Count of Section” from out of the Values area and into the Rows area:
 
-![Pivot Table Fields modal with Count of Address in the Values area and Section in the Rows area.](/blog/img/image.jpg)
+![Pivot Table Fields modal with Count of Address in the Values area and Section in the Rows area.](/blog/img/areas3.png)
 
 And all of a sudden, *my table has something to say*:
 
-![The pivot table built out with Section labels in the first column and page count in the second column.](/blog/img/image.jpg)
+![The pivot table built out with Section labels in the first column and page count in the second column.](/blog/img/output.png)
 
 Is that not *amazing*?
 
@@ -123,11 +116,14 @@ The other thing I love about pivot tables is that they make it very easy to visu
 
 First, I select the data in the pivot table that I want to display in the chart. That means everything except the Grand Total and the homepage (the one shown as “blank,” since I wouldn’t have assigned it a section):
 
-![The pivot table with portions selected to build a chart.](/blog/img/image.jpg)
+![The pivot table with portions selected to build a chart.](/blog/img/chart.png)
 
 Then I select Insert > Chart > Pie:
 
-![The pivot table with a pie chart displaying the same data.](/blog/img/image.jpg)
+{% respimg 
+    src="pie.jpg",
+    alt="The pivot table with a pie chart displaying the same data."
+%}
 
 A pie chart doesn’t serve every metric (I use bar and line graphs for other data sets), but it’s perfect for visualizing the real estate of the site. It’s a much more immediate way of showing my clients: *wow, that’s a lot of News & Events*.
 
@@ -137,10 +133,4 @@ Calculating the real estate of a site is one of the first things I do during a c
 
 And pivot tables and pie charts aren’t the only players in my content analysis. I have many other elements to consider during the discovery phase—the site’s structure, the findability and usability of the page content, the technical constraints of the project, the users’ needs and tasks, the business goals for the site, and more—to form a complete understanding of the site content and how it might be transformed.
 
-<<<<<<< HEAD
 If you use automated crawls, and you’re new to pivot tables, I hope this has shown you one way that pivot tables might help you. My biggest recommendation is to experiment with them, since that’s how I’ve learned what I’ve learned. Poke at pivot tables with a sharp stick. Click and unclick every option. Ask, “What happens if I drag this field to *this* box instead?” See if they make some magic for you, too.
-
-*Photo by Jerry Kiesewetter on [Unsplash](https://unsplash.com/)*
-=======
-If you use automated crawls, and you’re new to pivot tables, I hope this has shown you one way that pivot tables might help you. My biggest recommendation is to experiment with them, since that’s how I’ve learned what I’ve learned. Poke at pivot tables with a sharp stick. Click and unclick every option. Ask, “What happens if I drag this field to *this* box instead?” See if they make some magic for you, too.
->>>>>>> 2a232a05accca6648fbd9a8cd62e7b2f89c2f5b4

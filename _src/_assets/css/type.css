@@ -218,6 +218,37 @@ li:before {
 
 }
 
+.post-copy blockquote {
+    margin: .75em 0 .75em 2.5%;
+    padding: 0 0 0 .85em;
+    position: relative;
+    max-width: 32em;
+}
+.post-copy blockquote:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 1px;
+    top: 0;
+    bottom: 0;
+    border-radius: 2px;
+    width: 3px;
+}
+
+.post-copy blockquote cite {
+    line-height: 1.1;
+}
+
+.post-copy blockquote span {
+    font-size: .9em;
+    padding-right: .5em;
+}
+.post-copy blockquote .author {
+    display: block;
+    font-size: .95em;
+    font-weight: bold;
+}
+
 .post-copy figure {
     margin: 1.5em 0;
     padding: 0;

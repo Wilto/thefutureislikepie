@@ -16,7 +16,7 @@ Grey:
 	rgba(65, 64, 66, 1);
 */
 main {
-	background: #f2fafe;
+	background: #fafdff;
 }
 
 a {
@@ -80,6 +80,10 @@ li:before {
 }
 .year-hed {
 	color: #265757;
+}
+
+.post-copy blockquote:before {
+	background: rgba(240, 73, 56, 1);
 }
 
 /* Panel theming */

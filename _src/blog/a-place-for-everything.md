@@ -1,7 +1,7 @@
 ---
 title: "A Place for Everything"
 lede: "Adding content to a website isn’t just about manpower and production—it’s about considering the content’s impact on the whole system."
-img: place
+img: ricos
 date: 2014-12-01
 alt: Shelf in an antique shop cluttered with games, lamps, and other household items.
 ---

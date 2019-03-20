@@ -1,7 +1,7 @@
 ---
 title: "My Head and My Heart"
 lede: "I put in my two weeks’ notice and tried to figure out my new role as a consultant. One week later, I had a stroke."
-img: head-and-heart
+img: atria
 date: 2015-02-09
 alt: Close-up medical illustration of the chambers of the heart muscle.
 ---

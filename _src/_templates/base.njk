@@ -81,7 +81,7 @@
 
 		<link rel="stylesheet" type="text/css" href="/_assets/css/all.css">
 	</head>
-	<body {% if art %}style="background-image: url(/_assets/img/{{ art }});"{% endif %}>
+	<body {% if art %}style="background-image: url(/_assets/img/{{ art }});"{% endif %}{% if img %} class="has-post-art"{% endif %}>
 		{% if img %}
 		{{ respimg('/blog/img/headers/', img, "100vw", alt ) }}
 		{% endif %}

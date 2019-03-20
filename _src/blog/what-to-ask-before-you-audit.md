@@ -1,9 +1,11 @@
 ---
 title: "What to Ask Before You Audit"
 lede: "Before you even begin the audit process, you need to make sure you’re collecting the right kind of data for the right reasons. Set yourself up for success by answering three critical auditing questions."
-img: audit-typing
+img: typing
 date: 2018-02-21
 alt: Hands typing on a laptop keyboard.
+artcredit: WOCinTechChat
+arturl: https://www.flickr.com/photos/wocintechchat/albums
 ---
 
 I love website audits. I really do. They may involve long hours and longer spreadsheets, but fiddly details are my jam. To those of you who don’t share my completionist streak, I say the same thing that a Parisian man once said to my mother when she told him she didn’t speak French: “Oh, I am so sorry for you.”
@@ -85,4 +87,3 @@ That’s three audits! But together, they form the basis for much of my later co
 
 And there’s so much more to this conversation—we haven’t even gotten into actually conducting the audit itself! Let me know in the comments what you want to hear more about, and what’s been helpful to you in *your* site audits! What tools do you use? What questions do you ask yourself? What can we share with each other to improve site audits for everyone?
 
-*Photo by [WOCinTechChat](https://www.wocintechchat.com/) on [Flickr](https://www.flickr.com/photos/wocintechchat/albums)*

@@ -1,14 +1,20 @@
 ---
 title: "This Talk is Political"
 lede: "Some in this industry ask for their colleagues to keep “politics” out of their work and off the stage. To those who would ask that: no."
-img: talks
 date: 2018-03-02
 alt: Close-up of a microphone.
+img: microphone
+artcredit: David Laws
+arturl: https://unsplash.com
 ---
 
-> Discussions about rights are avoided by those who seek deflection because of guilt, those who shy away from difficult decisions and those who profit from a more superficial, simple, and ultimately useless, analysis.
-
-*—Zeid Ra’ad Al Hussein, UN High Commissioner for Human Rights, [37th session of the Human Rights Council](http://www.ohchr.org/EN/NewsEvents/Pages/DisplayNews.aspx?NewsID=22702&LangID=E), 2/26/18*
+{% pullquote 
+    author="Zeid Ra’ad Al Hussein, UN High Commissioner for Human Rights",
+    cite="37th session of the Human Rights Council",
+    citehref="http://www.ohchr.org/EN/NewsEvents/Pages/DisplayNews.aspx?NewsID=22702&LangID=E"
+%}
+Discussions about rights are avoided by those who seek deflection because of guilt, those who shy away from difficult decisions and those who profit from a more superficial, simple, and ultimately useless, analysis.
+{% endpullquote %}
 
 Last Saturday, I attended [World IA Day Boston](https://twitter.com/WIADBOS). The event was well-attended, well-executed, well-programmed. It was also political.
 
@@ -69,5 +75,3 @@ We cannot separate who we are from the work we do on the web. Call it political;
 The question is not: should our talks be political? We don’t get to choose. They simply are, and always have been. Our lives are political, and our work on the web will always be political, and we should not flinch.
 
 The question is only: is our industry brave enough to listen to us?
-
-*Photo by david laws on [Unsplash](https://unsplash.com/)*

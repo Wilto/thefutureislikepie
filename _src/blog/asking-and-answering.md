@@ -1,14 +1,14 @@
 ---
 title: "Asking and Answering"
 lede: "I won’t say these are resolutions for 2015, then, but I will say that this is where my energy is focused right now—and where I’d like to keep it for the next few months."
-img: talks
+img: 2014yearinreview
 date: 2014-12-31
 alt: View of the Mediterranean Sea and a coastal town in Spain.
 ---
 
-> There are years that ask questions and years that answer.
-
-*—Zora Neale Hurston*
+{% pullquote author="Zora Neale Hurston" %}
+There are years that ask questions and years that answer.
+{% endpullquote %} 
 
 I’m on a train heading north, on my way to Boston; I think Rhode Island is sliding past my window right now, and the sun is rich and the sky is that creamy blue of late fall and the various bays of Atlantic water are reflecting the dark tinder of trackside forests. It’s really beautiful. It’s the last day of 2014.
 

@@ -1,9 +1,11 @@
 ---
 title: "But I Repeat Myself"
 lede: "The work sometimes involves tedium, drudgery, and, yes, repetition. But if we expect it from the beginning—if we acknowledge that retracing our steps is part and parcel to the project—then we move from redundancy to iteration."
-img: repeat-myself
+img: fudge
 date: 2018-01-03
 alt: Close-up of chocolate and marshmallow swirls in a pan of uncut peanut butter fudge.
+artcredit: Nadine Shaabana
+arturl: https://unsplash.com
 ---
 
 ### 1.

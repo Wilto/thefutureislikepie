@@ -1,14 +1,20 @@
 ---
 title: "Time to Bring It Back Online"
 lede: "I’m supposed to start writing about the industry again? Here, or on Twitter? As if any of it matters? As if it’s fair to contain the multitudes for discussing my work, my politics, my writing, my frustrations, my minutiae, my rage, my joy, all at once?"
-img: back-online
+img: ringlight
 date: 2018-01-19
 alt: A glowing white circular light held by up by a hand in the darkness.
+artcredit: Nadine Shaabana
+arturl: https://unsplash.com
 ---
 
-> Blogging won’t save the world. But, hell … it feels great to be back.
 
-*—[iA Writer](https://ia.net/topics/web-trend-map-2018/)*
+{% pullquote 
+    author="iA Writer",
+    authorhref="https://ia.net/topics/web-trend-map-2018/"
+%}
+Blogging won’t save the world. But, hell … it feels great to be back.
+{% endpullquote %}
 
 You may have noticed that, earlier this month, I [published a piece of writing on this site](http://thefutureislikepie.com/but-i-repeat-myself/) for the first time in three years. It’s not that I haven’t been doing any writing in that time, but that my writing efforts were skewed in other directions:
 
@@ -29,5 +35,3 @@ But I’m supposed to start writing about the industry again? Here, or on Twitte
 So it’s 2018, and the truth is that sometimes I don’t give a fig about tech design. And sometimes I give too much of a fig: that’s how you end up deciding to write a book, I suppose. That tension—dancing between wanting to be a productive member of an industry and wanting to burn the whole system down—well, I have to find a way to live in it.
 
 What’s up.
-
-*Photo by Nadine Shaabana on [Unsplash](https://unsplash.com/)*

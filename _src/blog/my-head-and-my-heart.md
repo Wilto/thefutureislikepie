@@ -54,8 +54,11 @@ I was in the hospital for three days. I lay in the stroke ward—the youngest pe
 
 I waited for test results. I waited for doctors. I barely slept. I stared at the walls, practically papered with FAST posters—directions for recognizing victims of stroke:
 
-![A poster showing the warning signs of stroke.](/img.jpg)
-One of at least five different “FAST” posters in my room.
+<figure>
+    <img src="/blog/img/heart-1.png" alt="A poster showing the warning signs of stroke.">
+    <figcaption class="inline-capt">One of at least five different “FAST” posters in my room.</figcaption>
+</figure>
+
 
 I spent a lot of time thinking about my brain. Something was wrong with it. I had felt it flicker and snap; I had felt it go dark and then light again.
 
@@ -65,8 +68,12 @@ I thought about how my body had its own agenda. How I was at the mercy of synaps
 
 My MRI came back with white whorls on my cerebellum: *like scars*, the neurologist said. They were *old* strokes, strokes that had come and gone and branded my brain in their wake.
 
-![An MRI photograph of my cerebellum.](/img.jpg)
-This is a real photo of my real brain. That is literally my cerebellum.
+
+{% respimg 
+    src="heart-2.jpg",
+    alt="An MRI photograph of my cerebellum.",
+    caption="This is a real photo of my real brain. That is literally my cerebellum."
+%}
 
 This was evidence that this had happened to me at least twice before. In my sleep, perhaps, or hidden in the Trojan horse of a migraine. Silent strokes. Strokes mistaken for a moment of lingering vertigo.
 

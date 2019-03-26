@@ -4,7 +4,7 @@ module.exports = function(eleventyConfig) {
 	const CleanCSS = require('clean-css');
 
 	eleventyConfig.addFilter("formatDate", dateObj => {
-		return DateTime.fromJSDate(dateObj).toFormat("LLLL dd, yyyy");
+		return DateTime.fromJSDate(dateObj).toFormat("LLLL d, yyyy");
 	});
 
 	eleventyConfig.addFilter("monthOnly", dateObj => {
@@ -14,7 +14,6 @@ module.exports = function(eleventyConfig) {
 	eleventyConfig.addFilter("yearOnly", dateObj => {
 		return DateTime.fromJSDate(dateObj).toFormat("yyyy");
 	});
-
 
 	// Homepage Sections
 	eleventyConfig.addCollection("sections", function(collection) {
@@ -41,7 +40,7 @@ module.exports = function(eleventyConfig) {
 						/blog/img/600/${ img.src } 600w,
 						/blog/img/800/${ img.src } 800w,
 						/blog/img/1000/${ img.src } 1000w"
-				sizes="${ img.sizes || "(min-width: 777px) 40em, 95vw" }">
+				sizes="${ img.sizes || "(min-width: 560px) 460px, calc(81.25vw + 21px)" }">
 			`;
 
 		if( img.caption ) {

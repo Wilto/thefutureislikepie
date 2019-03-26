@@ -1,9 +1,9 @@
 ---
 layout: home.njk
-art: header.jpg
-artcredit: Stankface Deathpunch
-arturl: https://hire.wil.to
 title: "My name is <strong>Lisa Maria Martin</strong>, and I am an independent consultant, speaker, editor, and writer."
+art: header.jpg
+artcredit: Joshua Harris
+arturl: https://unsplash.com/photos/UUm7bh5I0QM
 ---
 
 As an information architect and content strategist, my mission is to make it easier for people to find, understand, and act on information on the web. I specialize in:

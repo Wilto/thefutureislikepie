@@ -250,8 +250,9 @@ li:before {
 }
 
 .post-copy figure {
-    margin: 1.5em 0;
+    margin: 2em 3.5% 1.5em 3.5%;
     padding: 0;
+    max-width: 25em;
 }
 
 .inline-capt {
@@ -377,7 +378,7 @@ li:before {
     position: relative;
 }
 
-.post-hed:after {
+.post-hed a:after {
     content:"";
     display: block;
     width: 10%;
@@ -387,6 +388,11 @@ li:before {
     position: absolute;
     bottom: 0;
     left: 0;
+    transition: width .15s ease-in-out;
+}
+
+.post-hed a:hover:after {
+    width: 20%;
 }
 
 .post-hed + p {

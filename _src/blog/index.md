@@ -3,8 +3,8 @@ eleventyExcludeFromCollections: true
 layout: index.njk
 title: "This is the writing"
 art: header.jpg
-artcredit: Stankface Deathpunch
-arturl: https://hire.wil.to
+artcredit: Joshua Harris
+arturl: https://unsplash.com/photos/UUm7bh5I0QM
 ---
 
 New blog! Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 

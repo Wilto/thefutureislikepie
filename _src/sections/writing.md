@@ -2,7 +2,7 @@
 pageClass: writing
 title: Writing
 lede: "I write books, articles, and poetry."
-order: 4
+order: 3
 ---
 
 [_Everyday Information Architecture_](https://abookapart.com/products/everyday-information-architecture) is out on **April 16, 2019**, from A Book Apart. It's a practical guide for designers, developers, and other web workers who want to make better, more intentional, more inclusive sitemaps and taxonomies.

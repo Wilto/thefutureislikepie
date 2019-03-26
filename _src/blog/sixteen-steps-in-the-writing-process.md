@@ -1,7 +1,7 @@
 ---
 title: "Sixteen Steps in the Writing Process"
 lede: "It would be embarrassing to publish an opinion only to find out that you simply didn’t have all the facts, thus offending others, sounding like a naive fool, and never being taken seriously in the industry again."
-img: place
+img: venetiis
 date: 2014-07-26
 alt: Ancient manuscript covered in ink stains and crossed-out Latin script.
 ---

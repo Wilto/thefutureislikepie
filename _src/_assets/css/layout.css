@@ -12,6 +12,10 @@ body {
 	}
 }
 
+body.has-post-art {
+	padding-top: 25em;
+}
+
 .site-head {
 	margin-top: 20vw;
 }
@@ -19,6 +23,13 @@ body {
 	.site-head {
 		margin-top: 12em;
 	}
+}
+
+.post-art img {
+	position: fixed;
+	top: 0;
+	z-index: -1;
+	width: 100%;
 }
 .post-art+.site-head {
 	margin-top: -.5em;

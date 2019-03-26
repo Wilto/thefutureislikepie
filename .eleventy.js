@@ -54,6 +54,35 @@ module.exports = function(eleventyConfig) {
 		return retimg;
 	});
 
+	eleventyConfig.addPairedShortcode("pullquote", function( quote, data ) {
+		let credit = '<cite>';
+
+		if( data.authorhref ) {
+			credit += '<a href="' + data.authorhref + '" class="author">' + data.author + '</a>';
+		} else {
+			credit += '<span class="author">' + data.author + '</span>';
+		}
+
+		if( data.cite ) {
+			credit += '<span class="source">';
+			if( data.citehref ) {
+				credit += '<a href="' + data.citehref + '">' + data.cite + '</a>';
+			} else {
+				credit += data.cite;
+			}
+			credit += '</span>';
+		}
+		if( data.date ) {
+			credit += '<span class="quotedate">' + data.date + '</span>';
+		}
+
+		credit += '</cite>';
+		return `<blockquote>
+${ quote }
+${ credit }
+</blockquote>`;
+	});
+
 	eleventyConfig.addCollection("blogposts",
 		collection => collection
 			.getAllSorted()

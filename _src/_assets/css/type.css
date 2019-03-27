@@ -276,6 +276,14 @@ li:before {
         font-size: 3.5em;
     }
 }
+.page-hed .amp {
+    font-weight: normal;
+    font-style: italic;
+    font-size: .80em;
+    display: inline-block;
+    padding-right: .1em;
+    font-family: Domaine,serif;
+}
 
 .page-lede {
     margin: 1.5em 0 0 0;

@@ -7,7 +7,7 @@ Red:
 	#f04938;
 	rgba(240, 73, 56, 1);
 
-Teal:;
+Teal:
 	#00a9b3;
 	rgba(0, 169, 179, 1);
 
@@ -62,6 +62,9 @@ li:before {
 .page-hed {
 	color: #00a9b3;
 }
+.page-hed .amp {
+	color: rgba(0, 169, 179, .8);
+}
 
 .site-head {
 	border-top: .5em solid #2a2a2a;
@@ -90,21 +93,32 @@ li:before {
 .sub {
 	background: #2b2c2b;
 	color: rgba(242,250,254,.9);
-	border-top: .45em solid #f2fafe;
-}
-.sub .accent {
-	content: "";
-	display: block;
 	position: relative;
+}
+.sub-body {
+	position: relative;
+}
+.sub .accent,
+.sub-body .accent {
+	display: block;
+	position: absolute;
 	height: .85em;
+	left: 50%;
 	width: 8em;
-	margin: 0 auto;
-	margin-top: -1px;
+	margin: 0 0 0 -4em;
+	bottom: -.825em;
 	z-index: 3;
-	fill: #f2fafe;
+	fill: #2b2c2b;
+}
+.sub-body .accent {
+	fill: #fff;
+}
+.sub:last-of-type .accent {
+	display: none;
 }
 .bio a,
-.sub a {
+.sub a,
+.sub-body .hero a {
 	background: rgba(0,0,0,.85);
 	color: #fff;
 	transition: background .2s linear, text-decoration-color .2s linear;
@@ -112,12 +126,14 @@ li:before {
 	border-radius: .15em;
 }
 .bio a:hover,
-.sub a:hover {
+.sub a:hover,
+.sub-body .hero a:hover {
 	background: rgba(0,0,0,1);
 	text-decoration-color: transparent;
 }
 .bio a:focus,
-.sub a:focus {
+.sub a:focus,
+.sub-body .hero a:focus {
 	outline: 2px dotted rgba(242,250,254,.8);
 }
 
@@ -135,7 +151,7 @@ li:before {
 }
 .sub:nth-of-type(2n) .accent,
 .sub:nth-of-type(5n) .accent {
-	fill: #f2fafe;
+	fill: #0098a1;
 }
 .sub:nth-of-type(2n) li:before,
 .sub:nth-of-type(5n) li:before {
@@ -147,7 +163,7 @@ li:before {
 	border-color: #414042;
 }
 .sub:nth-of-type(3n) .accent {
-	fill:  #414042;
+	fill:  #d34132;
 }
 .sub:nth-of-type(2n) a,
 .sub:nth-of-type(3n) a,
@@ -169,17 +185,19 @@ li:before {
 	background: #f2fafe;
 	border-color: #479ea3;
 }
-
+.sub-body .hero a,
 .sub:nth-of-type(4n) a {
 	background: rgba(0, 169, 179, .1);
 	color: #414042;
 	text-decoration: underline;
 }
+.sub-body .hero a:hover,
 .sub:nth-of-type(4n) a:hover {
 	background: rgba(0, 169, 179, .25);
 	color: #414042;
 	text-decoration-color: transparent;
 }
+.sub-body .hero a:focus,
 .sub:nth-of-type(4n) a:focus {
 	outline: 2px dotted rgba(0,0,0,.8);
 }
@@ -190,7 +208,7 @@ li:before {
 	color: #479ea3;
 }
 .sub:nth-of-type(4n) .accent {
-	fill: #479ea3;
+	fill: #f2fafe;
 }
 .sub:nth-of-type(4n) .section-hed:after {
 	border-color: #414042;

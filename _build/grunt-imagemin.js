@@ -14,7 +14,7 @@ module.exports = function(grunt) {
 				expand: true,
 				progressive: true,
 				cwd: '_site/blog/img',
-				src: ['*.{png,jpg,gif}'],
+				src: ['headers/*.{png,jpg,gif}'],
 				dest: '_site/blog/img'
 			}]
 		},
@@ -31,6 +31,19 @@ module.exports = function(grunt) {
 				dest: "_site/blog/img",
 				ext: ".webp"
 			}]
-		}
+		},
+		originals: {
+			options: {
+				optimizationLevel: 3,
+				use: [mozjpeg()]
+			},
+			files: [{
+				expand: true,
+				progressive: true,
+				cwd: '_src/blog/img/',
+				src: ['*.{png,jpg,gif}'],
+				dest: './_site/blog/img/'
+			}]
+		},
 	});
 };

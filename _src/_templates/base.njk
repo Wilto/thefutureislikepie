@@ -4,7 +4,7 @@
 			sizes="{{ sizes }}"
 			srcset="
 				{{ path }}{{ img }}-1.webp 600w,
-				{{ path }}{{ img }}-2.webp 799w,
+				{{ path }}{{ img }}-2.webp 800w,
 				{{ path }}{{ img }}-3.webp 1000w,
 				{{ path }}{{ img }}-4.webp 1400w,
 				{{ path }}{{ img }}-5.webp 2000w,
@@ -13,7 +13,7 @@
 			sizes="{{ sizes }}"
 			srcset="
 				{{ path }}{{ img }}-1.jpg 600w,
-				{{ path }}{{ img }}-2.jpg 799w,
+				{{ path }}{{ img }}-2.jpg 800w,
 				{{ path }}{{ img }}-3.jpg 1000w,
 				{{ path }}{{ img }}-4.jpg 1400w,
 				{{ path }}{{ img }}-5.jpg 2000w,
@@ -81,9 +81,9 @@
 
 		<link rel="stylesheet" type="text/css" href="/_assets/css/all.css">
 	</head>
-	<body {% if art %}style="background-image: url(/_assets/img/{{ art }});"{% endif %}>
+	<body {% if art %}style="background-image: url(/_assets/img/{{ art }});"{% endif %}{% if img %} class="has-post-art"{% endif %}>
 		{% if img %}
-		{{ respimg('/blog/img/', img, "100vw", alt ) }}
+		{{ respimg('/blog/img/headers/', img, "100vw", alt ) }}
 		{% endif %}
 		<header class="site-head">
 			<div class="sub-body">
@@ -106,7 +106,7 @@
 					{%- endfor -%}
 				</div>
 				<div class="foot-details">
-				{% if artcredit %}
+{% if artcredit %}
 					<p class="credit">Header art by {% if arturl %}<a href="{{ arturl | url }}">{% endif %}{{ artcredit | safe }}{% if arturl %}</a>{% endif %}</p>
 {% endif %}
 					<p class="copyright">Copyright 2012–2019 Lisa Maria Martin</p>

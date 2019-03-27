@@ -1,16 +1,14 @@
 ---
 layout: home.njk
-title: "My name is <strong>Lisa Maria Martin</strong>, and I am a consultant specializing in information architecture, content strategy, and user experience design."
+title: "My name is <strong>Lisa Maria Martin</strong>, and I am an independent consultant, writer, speaker, and editor."
 art: header.jpg
-artcredit: Stankface Deathpunch
-arturl: https://hire.wil.to
+artcredit: Joshua Harris
+arturl: https://unsplash.com/photos/UUm7bh5I0QM
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et [a big bright link](#) dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea.
+As an information architect and content strategist, my mission is to make it easier for people to find, understand, and act on information on the web. I specialize in:
+* Analyzing and strategizing content
+* Building sitemaps and navigation structures
+* Designing taxonomic systems
 
-* **Analyzing web content** to identify current challenges and potential solutions
-* Building sitemaps and navigation structures to support information access and discovery
-* Modeling content to improve clarity and technical execution
-* Designing taxonomic systems to connect content across the experience
+[Get in touch](mailto:lisa.maria.martin@gmail.com), or read on to learn more about my work.

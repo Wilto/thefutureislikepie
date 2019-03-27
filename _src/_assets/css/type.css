@@ -194,7 +194,73 @@ li:before {
 
 .post-copy p {
     max-width: 42.5em;
+    line-height: 1.55;
 }
+.post-copy a {
+    text-decoration: underline;
+    text-decoration-color: rgba(240, 73, 56, 1);
+}
+.post-copy a:hover {
+    text-decoration: none;
+}
+.post-copy h3,
+.post-copy h4 {
+    font-family: Sofia, sans-serif;
+    text-transform: uppercase;
+    margin: 2.75em 0 0 0;
+    letter-spacing: .045em;
+}
+.post-copy h4 {
+    font-size: .95em;
+}
+.post-copy h3,
+.post-copy h4 {
+
+}
+
+.post-copy blockquote {
+    margin: .75em 0 .75em 2.5%;
+    padding: 0 0 0 .85em;
+    position: relative;
+    max-width: 32em;
+}
+.post-copy blockquote:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 1px;
+    top: 0;
+    bottom: 0;
+    border-radius: 2px;
+    width: 3px;
+}
+
+.post-copy blockquote cite {
+    line-height: 1.1;
+}
+
+.post-copy blockquote span {
+    font-size: .9em;
+    padding-right: .5em;
+}
+.post-copy blockquote .author {
+    display: block;
+    font-size: .95em;
+    font-weight: bold;
+}
+
+.post-copy figure {
+    margin: 2em 3.5% 1.5em 3.5%;
+    padding: 0;
+    max-width: 25em;
+}
+
+.inline-capt {
+    font-size: 1.1em;
+    margin-top: .25em;
+    font-style: italic;
+}
+
 .tmpl-post .page-hed {
     font-size: 2.2em;
     padding-bottom: .5em;
@@ -271,7 +337,12 @@ li:before {
 .year-hed {
     font-family: Sofia, sans-serif;
     font-weight: bold;
-    font-size: .95em;
+    font-size: 1em;
+    margin-bottom: 0;
+    margin-top: 6.5em;
+}
+.sub-body .year-hed:first-of-type {
+    margin-top: 0;
 }
 .postdate,
 .month-hed {
@@ -287,14 +358,45 @@ li:before {
     margin-left: .5em;
 }
 .month-hed {
+    margin-top: 7.5em;
     text-align: right;
-    border-top: 1px solid #ccc;
+}
+.year-hed+.month-hed {
+    margin-top: .25em;
+}
+
+.tmpl-blog .post p {
+    font-size: 1.1em;
+    padding-right: 5%;
 }
 
 .post-hed {
     font-family: Sofia, sans-serif;
     font-size: 1.8em;
-    margin: 0;
+    margin: 0 0 .35em 0;
+    padding-bottom: .35em;
+    position: relative;
+}
+
+.post-hed a:after {
+    content:"";
+    display: block;
+    width: 10%;
+    height: 3px;
+    border-radius: 2px;
+    background: #f04938;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: width .15s ease-in-out;
+}
+
+.post-hed a:hover:after {
+    width: 20%;
+}
+
+.post-hed + p {
+    margin-top: .35em;
 }
 
 .bio p {
@@ -323,6 +425,14 @@ textarea {
     font-family: Domaine, serif;
     font-size: 1.1em;
     padding: .75em 1.5em .75em .75em;
+}
+
+
+.pagination {
+    font-family: Sofia, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: .045em;
+    font-size: .95em;
 }
 
 .copyright {

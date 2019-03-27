@@ -1,10 +1,13 @@
 ---
 pageClass: editing
 title: Editing
-lede: "I’m the managing editor for A Book Apart, a publisher of brief books for web designers, developers, and other user experience professionals."
-order: 3
+lede: "Developmental editing is just information architecture for books."
+order: 5
 ---
+I’m the managing editor for [A Book Apart](https://abookapart.com), a publisher of brief books for web designers, developers, and other UX professionals. In addition to setting and overseeing editorial standards, I work closely with every author in the developmental editing stage to guide conceptual flow and narrative structure.
 
-I am an energizing and approachable speaker (perfect for those first-thing-in-the-morning or [right-after-lunchtime](#) slots). I consistently receive high satisfaction scores on audience surveys, and enjoy the opportunity to teach (and learn from!) new crowds. You can see some of my slide decks on Slideshare.
-
-My current talk, “Structuring Content to Empower Users,” can be given as a 45-minute talk or a three-hour workshop, and is available for conferences and corporate engagements in 2019.
+Recent titles I’ve worked on include:
+* [Conversational Design](https://abookapart.com/products/conversational-design) by Erika Hall 
+*  [Writing for Designers](https://abookapart.com/products/writing-for-designers) by Scott Kubie 
+* [Progressive Web Apps](https://abookapart.com/products/progressive-web-apps)  by Jason Grigsby
+* [Image Performance](https://abookapart.com/products/image-performance) by Mat Marquis

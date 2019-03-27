@@ -1,0 +1,17 @@
+---
+layout: base.njk
+templateClass: tmpl-error
+---
+
+<div class="sub-body">
+	<h2 class="page-hed">{{ title | safe }}</h2>
+	{% if lede %}
+	<p class="lede page-lede">{{ lede | safe }}</p>
+	{% endif %}
+	<div class="hero">
+		{{ content | safe }}
+	</div>
+	<svg viewBox="0 0 464 48" xmlns="http://www.w3.org/2000/svg" fill="red" class="accent" aria-hidden="true">
+		<path d="M232.524 48.002a81.633 81.633 0 0 0-1.048 0C223.676 25.723 129.472 7.04.342 0h463.316c-129.13 7.04-223.334 25.723-231.134 48.002z" fill-rule="evenodd"/>
+	</svg>
+</div>

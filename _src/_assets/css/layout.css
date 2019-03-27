@@ -4,6 +4,16 @@ body {
 	background-repeat: no-repeat;
 	background-position: center top;
 	background-attachment: fixed;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	min-height: 100vh;
+}
+
+body:after {
+	content: "";
+	display: table;
+	clear: both;
 }
 
 @media( min-width: 45em ) {
@@ -109,6 +119,7 @@ body.has-post-art {
 	clear: both;
 	width: 95%;
 }
+
 @media( min-width: 45em ) {
 	.foot-details > * {
 		float: right;
@@ -118,6 +129,10 @@ body.has-post-art {
 	}
 }
 @supports( display: grid ) {
+	body {
+		display: grid;
+		grid-template-rows: auto 1fr auto;
+	}
 	.col-ab {
 		width: 66%;
 		max-width: 800px;

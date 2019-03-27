@@ -436,11 +436,30 @@ textarea {
 }
 
 
-.pagination {
+.pagination,
+.blog-archive {
     font-family: Sofia, sans-serif;
     text-transform: uppercase;
     letter-spacing: .045em;
     font-size: .95em;
+}
+
+.blog-archive {
+    position: absolute;
+    bottom: 1.1em;
+    right: 3.5%;
+    margin-top: .5em;
+}
+.blog-archive:after {
+    content: "";
+    display: inline-block;
+    border: solid;
+    position: relative;
+    border-width: 2px 2px 0 0;
+    top: -.5em;
+    width: .3em;
+    height: .25em;
+    margin-left: .1em;
 }
 
 .copyright {

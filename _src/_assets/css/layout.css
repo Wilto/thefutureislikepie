@@ -38,7 +38,13 @@ body.has-post-art {
 .logo {
 	width: 33.333333%;
 	max-width: 5em;
-	margin: -3.25em auto 0 auto;
+	margin: -2.5em auto 0 auto;
+}
+@media(min-width: 30em) {
+	.logo {
+		margin-top: -3.25em;
+		width: 33.333333%;
+	}
 }
 .logo a {
 	display: block;
@@ -64,7 +70,7 @@ body.has-post-art {
 }
 
 .blog-index {
-	padding-bottom: 10em;
+	padding-bottom: 20em;
 }
 
 .post {
@@ -182,7 +188,7 @@ textarea {
 	float: left;
 	width: 100%;
 	position: relative;
-	bottom: -3.5em;
+	margin-top: 6.5em;
 	padding-top: .25em;
 }
 

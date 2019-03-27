@@ -16,7 +16,7 @@ arturl: https://unsplash.com
 Blogging won’t save the world. But, hell … it feels great to be back.
 {% endpullquote %}
 
-You may have noticed that, earlier this month, I [published a piece of writing on this site](http://thefutureislikepie.com/but-i-repeat-myself/) for the first time in three years. It’s not that I haven’t been doing any writing in that time, but that my writing efforts were skewed in other directions:
+You may have noticed that, earlier this month, I [published a piece of writing on this site](/but-i-repeat-myself/) for the first time in three years. It’s not that I haven’t been doing any writing in that time, but that my writing efforts were skewed in other directions:
 
 * I spent 2016 writing a bunch of [essays overthinking episodes of Star Trek](http://holodexmachina.tumblr.com/)
 * I spent 2017 furiously working on a personal writing project * cough * a poetry collection * cough *

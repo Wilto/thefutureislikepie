@@ -252,6 +252,10 @@ li:before {
 	border: .35em solid #f2fafe;
 }
 
+a.blog-archive:after {
+	border-color: rgba(0, 169, 179, .75);
+}
+
 label {
 	color: #f2fafe;
 }

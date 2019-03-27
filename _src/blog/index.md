@@ -1,7 +1,7 @@
 ---
 eleventyExcludeFromCollections: true
 layout: index.njk
-title: "This is the writing"
+title: 'Blogs <span class="amp">&</span> Articles'
 art: header.jpg
 artcredit: Joshua Harris
 arturl: https://unsplash.com/photos/UUm7bh5I0QM

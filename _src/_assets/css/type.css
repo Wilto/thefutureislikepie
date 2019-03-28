@@ -129,7 +129,7 @@ li:before {
 }
 @media(min-width: 45em) {
     .section-hed {
-        font-size: 1.5em;
+        font-size: 1.8em;
     }
 }
 
@@ -141,7 +141,7 @@ li:before {
     content: "";
     display: block;
     flex-grow: 2;
-    margin: .4em 0 .25em 3em;
+    margin: .4em 0 .25em 1.5em;
     border-width: 3px 3px 0 0;
 }
 

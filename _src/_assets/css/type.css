@@ -167,6 +167,9 @@ li:before {
 .bio-hed {
     margin-bottom: .5em;
     font-weight: 400;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    letter-spacing: .125em;
 }
 
 .page-hed {

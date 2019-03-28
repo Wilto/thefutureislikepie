@@ -122,10 +122,15 @@ li:before {
 .section-hed {
     font-family: Sofia, sans-serif;
     text-transform: uppercase;
-    font-size: 1.65em;
-    margin-bottom: 0;
+    font-size: 1.45em;
+    margin-bottom: .15em;
     letter-spacing: .04em;
     font-weight: 400;
+}
+@media(min-width: 45em) {
+    .section-hed {
+        font-size: 1.5em;
+    }
 }
 
 .section-hed {
@@ -141,12 +146,19 @@ li:before {
 }
 
 .lede {
-    font-size: 1.3em;
-    line-height: 1.25;
+    font-size: 1.1em;
+    line-height: 1.1;
     font-family: Sofia, sans-serif;
     font-weight: 100;
     margin: 0 0 1.25em 0;
 }
+@media(min-width: 45em) {
+    .lede {
+        font-size: 1.35em;
+        line-height: 1.25;
+    }
+}
+
 
 .lede strong {
     font-weight: 800;

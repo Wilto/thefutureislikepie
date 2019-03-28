@@ -171,7 +171,6 @@ li:before {
 	background: rgba(0,0,0,.2);
 	color: #f2fafe;
 	transition: background .2s linear;
-	display: inline-block;
 	padding: 0 2px;
 	border-radius: .15em;
 }

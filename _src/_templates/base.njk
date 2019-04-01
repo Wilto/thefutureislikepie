@@ -8,7 +8,7 @@
 				{{ path }}{{ img }}-3.webp 1000w,
 				{{ path }}{{ img }}-4.webp 1400w,
 				{{ path }}{{ img }}-5.webp 2000w,
-				{{ path }}{{ img }}-6.webp 2400w">
+				{{ path }}{{ imgf }}-6.webp 2400w">
 		<img 
 			sizes="{{ sizes }}"
 			srcset="
@@ -65,12 +65,12 @@
 		<meta name="twitter:card" content="summary">
 		<meta name="twitter:site" content="@redsesame">
 		<meta name="twitter:creator" content="@redsesame">
-		<meta name="twitter:title" content="{{ data.name }}">
-		<meta property="og:title" content="{{ data.name }}">
+		<meta name="twitter:title" content="{{ title | data.name }}">
+		<meta property="og:title" content="{{ title | data.name }}">
 		<meta property="og:url" content="{{ data.url }}">
 
-		<meta name="twitter:description" content="{{ title }}">
-		<meta property="og:description" content="{{ title }}">
+		<meta name="twitter:description" content="{{ lede | data.description }}">
+		<meta property="og:description" content="{{ lede | data.description }}">
 
 		<meta name="twitter:image" content="{{ data.url }}/_assets/img/card.jpg">
 		<meta name="twitter:image:alt" content="{{ data.name }}">

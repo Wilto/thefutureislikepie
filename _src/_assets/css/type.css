@@ -400,7 +400,9 @@ li:before {
     padding-bottom: .35em;
     position: relative;
 }
-
+.post-hed a {
+    text-decoration: none;
+}
 .post-hed a:after {
     content:"";
     display: block;

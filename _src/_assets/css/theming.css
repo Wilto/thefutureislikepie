@@ -139,7 +139,7 @@ li:before {
 
 .sub:nth-of-type(2n),
 .sub:nth-of-type(5n) {
-	background: #0098a1;
+	background: #017e85;
 }
 .sub:nth-of-type(2n) a,
 .sub:nth-of-type(5n) a {
@@ -151,7 +151,7 @@ li:before {
 }
 .sub:nth-of-type(2n) .accent,
 .sub:nth-of-type(5n) .accent {
-	fill: #0098a1;
+	fill: #017e85;
 }
 .sub:nth-of-type(2n) li:before,
 .sub:nth-of-type(5n) li:before {
@@ -159,11 +159,11 @@ li:before {
 }
 
 .sub:nth-of-type(3n) {
-	background: #d34132;
+	background: #c8382a;
 	border-color: #414042;
 }
 .sub:nth-of-type(3n) .accent {
-	fill:  #d34132;
+	fill:  #c8382a;
 }
 .sub:nth-of-type(2n) a,
 .sub:nth-of-type(3n) a,

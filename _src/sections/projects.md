@@ -9,6 +9,6 @@ My projects focus on the strategic and structural portions of website design. I 
 
 I often partner with design teams and agencies, including [Brain Traffic](https://www.braintraffic.com/), [Happy Cog](https://www.happycog.com/), [Seven Heads Design](http://www.sevenheadsdesign.com/), and [National Design Service](https://nationaldesignservice.com/). 
 
-Recent clients include MassMutual, Vectorworks, Carnegie Mellon University, the Posse Foundation, Gettysburg College, The Associated Press, Seton Hill University, University of California, and Autodesk.
+Recent clients include MassMutual, Vectorworks, egghead.io, Carnegie Mellon University, the Posse Foundation, Gettysburg College, The Associated Press, University of California, and Autodesk.
 
 [Contact me to find out how we can work together.](mailto:lisa.maria.martin@gmail.com)

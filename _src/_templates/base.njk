@@ -65,13 +65,22 @@
 		<meta name="twitter:card" content="summary">
 		<meta name="twitter:site" content="@redsesame">
 		<meta name="twitter:creator" content="@redsesame">
-		<meta name="twitter:title" content="{{ data.name }}">
-		<meta property="og:title" content="{{ data.name }}">
 		<meta property="og:url" content="{{ data.url }}">
 
-		<meta name="twitter:description" content="{{ title }}">
-		<meta property="og:description" content="{{ title }}">
-
+		{% if templateClass == "tmpl-post" %}
+		<meta name="twitter:title" content="{{ title }}">
+		<meta property="og:title" content="{{ title }}">
+		{% else %}
+		<meta name="twitter:title" content="{{ data.name }}">
+		<meta property="og:title" content="{{ data.name }}">
+		{% endif %}
+		{% if lede %}
+		<meta name="twitter:description" content="{{ lede }}">
+		<meta property="og:description" content="{{ lede }}">
+		{% else %}
+		<meta name="twitter:description" content="{{ data.description }}">
+		<meta property="og:description" content="{{ data.description }}">
+		{% endif %}
 		<meta name="twitter:image" content="{{ data.url }}/_assets/img/card.jpg">
 		<meta name="twitter:image:alt" content="{{ data.name }}">
 		<meta property="og:image" content="{{ data.url }}/_assets/img/card.jpg">
@@ -116,8 +125,20 @@
 		</footer>
 
 		<script>
-			if( 'serviceWorker' in navigator && window.location.hostname !== "localhost" ) {
-				navigator.serviceWorker.register('sw.js');
+			if( window.location.hostname !== "localhost" ) {
+				if( 'serviceWorker' in navigator ) {
+					navigator.serviceWorker.register('sw.js');
+				}
+				var _paq = window._paq || [];
+				_paq.push(['trackPageView']);
+				_paq.push(['enableLinkTracking']);
+				(function() {
+					var u="https://analytics.thefutureislikepie.com/";
+					_paq.push(['setTrackerUrl', u+'matomo.php']);
+					_paq.push(['setSiteId', '1']);
+					var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+					g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+				})();
 			}
 		</script>
 	</body>

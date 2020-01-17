@@ -122,10 +122,15 @@ li:before {
 .section-hed {
     font-family: Sofia, sans-serif;
     text-transform: uppercase;
-    font-size: 1.65em;
-    margin-bottom: 0;
+    font-size: 1.45em;
+    margin-bottom: .15em;
     letter-spacing: .04em;
     font-weight: 400;
+}
+@media(min-width: 45em) {
+    .section-hed {
+        font-size: 1.8em;
+    }
 }
 
 .section-hed {
@@ -136,17 +141,24 @@ li:before {
     content: "";
     display: block;
     flex-grow: 2;
-    margin: .4em 0 .25em 3em;
+    margin: .4em 0 .25em 1.5em;
     border-width: 3px 3px 0 0;
 }
 
 .lede {
-    font-size: 1.3em;
-    line-height: 1.25;
+    font-size: 1.1em;
+    line-height: 1.1;
     font-family: Sofia, sans-serif;
     font-weight: 100;
     margin: 0 0 1.25em 0;
 }
+@media(min-width: 45em) {
+    .lede {
+        font-size: 1.35em;
+        line-height: 1.25;
+    }
+}
+
 
 .lede strong {
     font-weight: 800;
@@ -155,6 +167,9 @@ li:before {
 .bio-hed {
     margin-bottom: .5em;
     font-weight: 400;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    letter-spacing: .125em;
 }
 
 .page-hed {
@@ -276,6 +291,14 @@ li:before {
         font-size: 3.5em;
     }
 }
+.page-hed .amp {
+    font-weight: normal;
+    font-style: italic;
+    font-size: .80em;
+    display: inline-block;
+    padding-right: .1em;
+    font-family: Domaine,serif;
+}
 
 .page-lede {
     margin: 1.5em 0 0 0;
@@ -377,7 +400,9 @@ li:before {
     padding-bottom: .35em;
     position: relative;
 }
-
+.post-hed a {
+    text-decoration: none;
+}
 .post-hed a:after {
     content:"";
     display: block;
@@ -428,11 +453,30 @@ textarea {
 }
 
 
-.pagination {
+.pagination,
+.blog-archive {
     font-family: Sofia, sans-serif;
     text-transform: uppercase;
     letter-spacing: .045em;
     font-size: .95em;
+}
+
+.blog-archive {
+    position: absolute;
+    bottom: 1.1em;
+    right: 3.5%;
+    margin-top: .5em;
+}
+.blog-archive:after {
+    content: "";
+    display: inline-block;
+    border: solid;
+    position: relative;
+    border-width: 2px 2px 0 0;
+    top: -.5em;
+    width: .3em;
+    height: .25em;
+    margin-left: .1em;
 }
 
 .copyright {

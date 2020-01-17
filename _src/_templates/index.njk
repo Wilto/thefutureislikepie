@@ -3,7 +3,7 @@ layout: base.njk
 templateClass: tmpl-blog
 pagination:
   data: collections.blogposts
-  size: 25
+  size: 10
   reverse: true
   alias: posts
 ---
@@ -47,4 +47,9 @@ pagination:
 		{% endif %}
 	</nav>
 	{% endif %}
+
+	{% if pagination.nextPageHref | length == 0 %}
+		<a href="https://archive.thefutureislikepie.com/home/writing/" class="blog-archive">Archived Posts</a>
+	{% endif %}
+
 </div>

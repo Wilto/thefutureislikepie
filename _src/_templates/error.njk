@@ -1,13 +1,13 @@
 ---
 layout: base.njk
-templateClass: tmpl-home
+templateClass: tmpl-error
 ---
 
 <div class="sub-body">
+	<h2 class="page-hed">{{ title | safe }}</h2>
 	{% if lede %}
 	<p class="lede page-lede">{{ lede | safe }}</p>
 	{% endif %}
-	<h2 class="page-hed">{{ title | safe }}</h2>
 	<div class="hero">
 		{{ content | safe }}
 	</div>
@@ -15,11 +15,3 @@ templateClass: tmpl-home
 		<path d="M232.524 48.002a81.633 81.633 0 0 0-1.048 0C223.676 25.723 129.472 7.04.342 0h463.316c-129.13 7.04-223.334 25.723-231.134 48.002z" fill-rule="evenodd"/>
 	</svg>
 </div>
-{% set sections = collections.sections | reverse %}
-{%- for section in sections-%}
-	{% if section.data.pageClass == "contact" %}
-	{% include "contact.njk" %}
-	{% else %}
-	{% include "section.njk" %}
-	{% endif %}
-{%- endfor -%}

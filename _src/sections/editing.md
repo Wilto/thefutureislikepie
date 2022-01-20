@@ -4,10 +4,9 @@ title: Editing
 lede: "Developmental editing is just information architecture for books."
 order: 5
 ---
-I’m the managing editor for [A Book Apart](https://abookapart.com), a publisher of brief books for web designers, developers, and other UX professionals. In addition to setting and overseeing editorial standards, I work closely with every author in the developmental editing stage to guide conceptual flow and narrative structure.
+I’m the managing editor for [A Book Apart](https://abookapart.com), a publisher of brief books for web designers, developers, and other UX professionals. In addition to setting and overseeing editorial standards, I work closely with every author in the developmental editing stage to guide the conceptual flow and narrative structure of their books.
 
 Recent titles I’ve worked on include:
-*  [Expressive Design Systems](https://abookapart.com/products/expressive-design-systems) by Yesenia Perez-Cruz
-* [Resilient Management](https://abookapart.com/products/resilient-management) by Lara Hogan
-* [Conversational Design](https://abookapart.com/products/conversational-design) by Erika Hall 
-* [Progressive Web Apps](https://abookapart.com/products/progressive-web-apps)  by Jason Grigsby
+* [Responsible JavaScript](https://abookapart.com/products/responsible-javascript) by Jeremy Wagner
+* [SEO for Everyone](https://abookapart.com/products/seo-for-everyone) by Rebekah Baggs and Chris Corak
+* [Design for Safety](https://abookapart.com/products/design-for-safety) by Eva PenzeyMoog 

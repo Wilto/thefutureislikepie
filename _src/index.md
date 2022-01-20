@@ -9,6 +9,7 @@ arturl: https://unsplash.com/photos/UUm7bh5I0QM
 As an information architect and content strategist, my mission is to make it easier for people to find, understand, and act on information on the web. I specialize in:
 * Analyzing and strategizing digital content
 * Building sitemaps and navigation structures
-* Designing taxonomic systems
+* Assessing and designing taxonomies
+* Systems thinking for web work
 
-[Get in touch](mailto:me@lisamariamarquis.com), or read on to learn more about my work.
+[Get in touch](mailto:lisamariamarquis@gmail.com), or read on to learn more about my work.

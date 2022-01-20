@@ -89,7 +89,9 @@ ${ credit }
 		);
 
 	eleventyConfig.addPassthroughCopy("_src/_assets");
+	eleventyConfig.addPassthroughCopy("_src/blog/img/headers");
 	eleventyConfig.addPassthroughCopy("_src/sw.js");
+	eleventyConfig.addPassthroughCopy("_src/admin");
 
 	return {
 		templateFormats: [

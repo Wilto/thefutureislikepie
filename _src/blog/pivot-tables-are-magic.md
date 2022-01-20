@@ -1,11 +1,15 @@
 ---
-title: "Pivot Tables are Magic"
-lede: "For me, working with automated crawl data is about translation: how do I make meaning out of these robot results? How do I condense the noisy numbers into a signal—something that provides insights for my strategy and brings my clients along on the journey?"
-img: pivot-tables
+newimg: /blog/img/headers/pivot-tables.jpg
+img: /blog/img/headers/pivot-tables.jpg
+date: 2018-04-23
+title: Pivot Tables are Magic
+lede: "For me, working with automated crawl data is about translation: how do I
+  make meaning out of these robot results? How do I condense the noisy numbers
+  into a signal—something that provides insights for my strategy and brings my
+  clients along on the journey?"
+alt: Green and white mailboxes numbered one through seven.
 artcredit: Jerry Kiesewetter
 arturl: https://unsplash.com/search/photos/numbers?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText
-date: 2018-04-23
-alt: Green and white mailboxes numbered one through seven.
 ---
 
 Automated audits are a common, and often crucial, tool in content work—but they’re nearly useless in their raw form:

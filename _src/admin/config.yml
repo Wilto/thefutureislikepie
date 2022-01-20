@@ -1,0 +1,31 @@
+backend:
+  name: github
+  repo: Wilto/thefutureislikepie # Path to your GitHub repository
+  branch: master
+media_folder: "_src/blog/img/headers" # Media files will be stored in the repo under images/uploads
+public_folder: "/blog/img/headers"
+
+collections:
+  - name: "bloc" # Used in routes, e.g., /admin/collections/blog
+    label: "Blog" # Used in the UI
+    folder: "_src/blog" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - {label: "Date", name: "date", widget: "date", format: 'YYYY-MM-DD' }
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Lede", name: "lede", widget: "markdown", required: false}
+      - {label: "Image", name: "newimg", widget: "image", required: false }
+      - {label: "alt", name: "alt", widget: "string", required: false}
+      - {label: "Artist Credit", name: "artcredit", widget: "string", required: false}
+      - {label: "Artist URL", name: "arturl", widget: "string", required: false}
+      - {label: "Body", name: "body", widget: "markdown", required: false}
+  - name: "sections" # Used in routes, e.g., /admin/collections/blog
+    label: "Homepage Sections" # Used in the UI
+    folder: "_src/sections" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Lede", name: "lede", widget: "markdown"}
+      - {label: "Body", name: "body", widget: "markdown"}

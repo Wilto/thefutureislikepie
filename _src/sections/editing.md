@@ -1,7 +1,7 @@
 ---
 pageClass: editing
 title: Editing
-lede: "Developmental editing is just information architecture for books."
+lede: Developmental editing is just information architecture for books.
 order: 5
 ---
 I’m the managing editor for [A Book Apart](https://abookapart.com), a publisher of brief books for web designers, developers, and other UX professionals. In addition to setting and overseeing editorial standards, I work closely with every author in the developmental editing stage to guide the conceptual flow and narrative structure of their books.

@@ -21,6 +21,18 @@
 			src="{{ path }}{{ img }}-6.jpg" 
 			alt="{{ alt }}">
 	</picture>
+{% endmacro %}{% macro newrespimg( img, sizes, alt, lazy=false) %}
+	<img 
+		sizes="{{ sizes }}"
+		srcset="
+			{{ img }}?nf_resize=fit&w=600 600w,
+			{{ img }}?nf_resize=fit&w=800 800w,
+			{{ img }}?nf_resize=fit&w=1000 1000w,
+			{{ img }}?nf_resize=fit&w=1400 1400w,
+			{{ img }}?nf_resize=fit&w=2000 2000w,
+			{{ img }}?nf_resize=fit&w=2400 2400w"
+		src="{{ img }}.jpg" 
+		alt="{{ alt }}">
 {% endmacro %}<!doctype html>
 <html lang="en" class="fonts">
 	<head>
@@ -43,7 +55,7 @@
 		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/_assets/img/icon-114.png">
 		
 		<meta name="msapplication-TileImage" content="/_assets/img/icon-144.png">
-		<meta name="theme-color" content="#6d252e">
+		<meta name="theme-color" content="#2a2a2a">
 		<link rel="icon" type="image/png" href="/_assets/img/icon-32.png" sizes="32x32">
 
 		<!-- Half my site’s transfer is in `meta` nonsense. -->
@@ -90,9 +102,13 @@
 
 		<link rel="stylesheet" type="text/css" href="/_assets/css/all.css">
 	</head>
-	<body {% if art %}style="background-image: url(/_assets/img/{{ art }});"{% endif %}{% if img %} class="has-post-art"{% endif %}>
-		{% if img %}
-		{{ respimg('/blog/img/headers/', img, "100vw", alt ) }}
+	<body {% if art %}style="background-image: url(/_assets/img/{{ art }});"{% endif %}{% if img or newimg %} class="has-post-art"{% endif %}>
+		{% if newimg %}
+		<div class="post-art">
+			{{ newrespimg( newimg, "100vw", alt ) }}
+		</div>
+		{% elif img %}
+			{{ respimg('/blog/img/headers/', img, "100vw", alt ) }}
 		{% endif %}
 		<header class="site-head">
 			<div class="sub-body">

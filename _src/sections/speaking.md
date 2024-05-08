@@ -1,11 +1,11 @@
 ---
 pageClass: speaking
-title: "Speaking"
-lede: "I've been speaking at conferences since 2013."
+title: "Talks and workshops"
+lede: "I love speaking to an interested crowd."
 order: 4
 ---
 
-I love delivering talks to a crowd. In addition to local meetups and corporate events, I have spoken at conferences such as:
+I've been delivering talks and workshops since 2013—at local meetups, corporate events, and conferences such as:
 
 * Confab Central
 * Design & Content Conference
@@ -16,4 +16,4 @@ I love delivering talks to a crowd. In addition to local meetups and corporate e
 * BlendConf
 * MIMA Summit
 
-I am an energizing and approachable speaker (perfect for those first-thing-in-the-morning or right-after-lunchtime slots). I consistently receive high satisfaction scores on audience surveys, and enjoy the opportunity to teach (and learn from!) new crowds. 
+I also offer regular one-off workshops in information architecture topics. [Check Eventbrite to see upcoming workshops](https://www.eventbrite.ca/o/lisa-maria-marquis-81599031663).

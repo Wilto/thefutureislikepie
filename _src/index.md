@@ -1,6 +1,6 @@
 ---
 layout: home.njk
-title: "My name is <strong>Lisa Maria Marquis</strong>, and I am an independent consultant, writer, speaker, and editor."
+title: "My name is <strong>Lisa Maria Marquis</strong>, and I am an independent consultant, author, speaker, and workshop facilitator."
 art: header.jpg
 artcredit: Joshua Harris
 arturl: https://unsplash.com/photos/UUm7bh5I0QM
